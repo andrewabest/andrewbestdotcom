@@ -6,7 +6,7 @@ draft: false
 
 Recently, the inimitable [Geoff Huntley](https://ghuntley.com/about/), a colleague of mine, gave an internal presentation talking about how he manages his online persona and brand. One thing I was inspired by in his talk was how deliberate Geoff is in this space, and the value he gets from his brand, and his website.
 
-I asked Geoff what he used for his website - half expecting it to be some crazy rube-goldberg like technological marvel.
+I asked Geoff what he used for his website - half expecting it to be some crazy Rube Goldberg like technological marvel.
 
 > I use Hugo for the static site, as it has a lot of built in bits. And I use Netlify for hosting.
 

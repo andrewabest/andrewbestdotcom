@@ -1,5 +1,5 @@
 ---
-title: "Creating a Blog in an Hour"
+title: "Creating a Personal Website and Blog in an Hour"
 date: 2018-07-08T19:54:20+10:00
 draft: false
 ---

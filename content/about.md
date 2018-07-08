@@ -5,8 +5,6 @@ menu: "main"
 draft: false
 ---
 
-# About
-
 I am an experienced **leader**, **consultant**, **architect**, and **developer**, with my experience being built on shipping successful outcomes for enterprises large and small across a wide variety of industry verticals.
 
 With broad and deep knowledge in digital strategy, agile delivery, team leadership, devops, and software engineering, I am in my element when working with businesses from the executive level to the developer level to deliver high quality, innovative, and impactful software solutions. I am a strong believer in continuous improvement, and constantly drive gradual, sustainable positive change in teams and organizations.

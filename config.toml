@@ -136,19 +136,3 @@ weight = 1
     name = "home"
     url = "/"
     weight = -130
-
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    url = "/about/"
-    weight = -120
-
-   [[menu.main]]
-    name = "lately"
-    url = "/lately/"
-    weight = -110
-
-  [[menu.main]]
-    name = "speaking"
-    url = "/speaking/"
-    weight = -100

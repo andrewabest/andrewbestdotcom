@@ -27,9 +27,14 @@ My website was now housed somewhere where I, and others, could contribute to it.
 * I clicked the large, prominent `New site from Git` button
 * Selected my [repository](https://github.com/andrewabest/andrewbestdotcom) from GitHub, which required no further authentication thanks to me having signed up with my GitHub account
 * Set up Continuous Deployment of the site - Netlify correctly identified it was a hugo repository and added the correct settings for this, so there was nothing for me to actually do to enable this
+* Enforced HTTPS for the site by clicking a button, which Netlify does via [LetsEncrypt](https://letsencrypt.org/)
 * Set up custom DNS
 
 Upon setting up DNS I paused and purchased [a domain name](https://www.andrew-best.com) via my account on [DNSimple](https://dnsimple.com). Netlify helpfully supplies you CNAME and ALIAS instructions for primary `www` and secondary `bare` urls, so without much thought I was able to plug those into DNSimple's domain management.
+
+**Total time** was little more than an hour. It would have been less if I didn't have to stuff around with submodules.
+
+**Total cost** was $14 for the domain name. _That is all_.
 
 And it all. Just. Worked.
 

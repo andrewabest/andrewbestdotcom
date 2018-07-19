@@ -197,4 +197,6 @@ A quick `F5`, fire up Postman and hit it with my `.docx` payload and...
 
 **TRIUMPH!**
 
-I'll update this with a GitHub issue link once I've lodged one for it.
+UPDATE:
+
+Here is the [GitHub issue](https://github.com/Azure/azure-functions-host/issues/3162) I've lodged for the above. 

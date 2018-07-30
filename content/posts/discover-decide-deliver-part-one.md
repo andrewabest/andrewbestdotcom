@@ -25,12 +25,12 @@ This was a pretty good start! They were looking to bring a broad cross-section o
 
 I find the best way to start a conversation about agility is to first introduce all parties to a few ***Undeniable Truths of Software Delivery*** that can serve as constraints:
 
-* If you don't know your goals, the outcome doesn't matter
-* The more software you attempt to deliver, the less likely you are to succeed
-* Upfront analysis adheres to a law of diminishing returns
-* Chaos, uncertainty, and change are absolutes within software deliveries
-* Software delivery in *any* methodology requires rigour and discipline to succeed
-* If you can't measure your outcomes, you'll never know if you succeeded
+> * If you don't know your goals, the outcome doesn't matter
+> * The more software you attempt to deliver, the less likely you are to succeed
+> * Upfront analysis adheres to a law of diminishing returns
+> * Chaos, uncertainty, and change are absolutes within software deliveries
+> * Software delivery in *any* methodology requires rigour and discipline to succeed
+> * If you can't measure your outcomes, you'll never know if you succeeded
 
 I was in the process of building a slide deck to help facilitate the sessions. After capturing these _undeniable truths_, considering what I wanted to present, and shuffling a heap of placeholder slides around in the deck I was curating, I came to a taxonomy that I thought accurately reflected the structure of what I wanted to present.
 

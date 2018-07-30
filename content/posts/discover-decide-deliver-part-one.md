@@ -59,6 +59,7 @@ All of these methodologies champion small iterative efforts, just-in-time or las
 Discover
 ========
 There are many reasons an enterprise may think they need to develop custom software:
+
 * Software may already be a core part of their business strategy
 * They may be struggling to compete in their industry and need to differentiate or disrupt 
 * Someone within the executive may have decided they _must_ have a thing (a [HiPPO](http://www.askahippo.com/) driven decision) 

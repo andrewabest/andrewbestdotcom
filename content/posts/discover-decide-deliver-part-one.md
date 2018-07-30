@@ -95,7 +95,7 @@ Here are some that I would typically recommend or employ. Some of them I can exe
 * [5 Whys](https://en.wikipedia.org/wiki/5_Whys) for goals ~2 hours
 * A [Mind Map](https://www.mindmup.com/) built with key decision makers ~1-2 hours
 
-The top three techniques also produce artefacts for potential solution scope that can be taken into the **decide** phase, and the bottom three can be extended to accomplish the same.
+The top three techniques also produce artefacts for potential solution scope that can be taken into the **Decide** phase, and the bottom three can be extended to accomplish the same.
 
 It is extremely valuable to have a visualised map from your problems and goals to potential solutions for those goals, as it visualises the assumptions you are making in this phase. At this point we are simply stating *"We assume that should we produce software of this shape, it will help us achieve these goals"*. Anything that cannot be tied back to contributing to the goals should be firmly rejected. Assumptions can only be validated completely once working software is in users hands.
 
@@ -114,7 +114,7 @@ If the scope discovered seems too large, this is a symptom of either too generic
 Who should participate?
 -----------------------
 
-During **discover**, we want to talk to people who have depth in their respective parts of the business, who can adequately represent that portion of the business in the discussion. We want to be talking to key executive, product, service, IT, customer facing representatives, and customers themselves, if possible. 
+During **Discover**, we want to talk to people who have depth in their respective parts of the business, who can adequately represent that portion of the business in the discussion. We want to be talking to key executive, product, service, IT, customer facing representatives, and customers themselves, if possible. 
 
 With most discovery activities, less is more for stakeholder count - you absolutely want less than a dozen stakeholders participating, and for the lower-ceremony techniques such as Impact Mapping, 4-8 is the sweet spot. Any more will dilute conversations, introduce too many opinions, and take away from our goal of having a light weight, agile discovery process. 
 

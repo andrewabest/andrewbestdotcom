@@ -20,7 +20,9 @@ The second problem also exacerbates the first. You're half way through a challen
 
 **Wrong.**
 
-I've found books that I've truly gained a lot of value from such as Gerald Weinberg's excellent [Secrets of Consulting](https://leanpub.com/thesecretsofconsulting), engage me from the start, or very early on. If a book doesn't engage me, even if the content is exceptional, I'll struggle to get value from it, and I certainly will not retain much of it after I've put it down, as I won't continue to mull over and embed the topics that were presented. Engagement is *more* important than content for me, as that is what will allow me to absorb and embed the knowledge imparted by the book.
+I've found books that I've truly gained a lot of value from such as Gerald Weinberg's excellent [Secrets of Consulting](https://leanpub.com/thesecretsofconsulting), engage me from the start, or very early on. If a book doesn't engage me, even if the content is exceptional, I'll struggle to get value from it, and I certainly will not retain much of it after I've put it down, as I won't continue to mull over and embed the topics that were presented. 
+
+Engagement is *more* important than content for me, as that is what will allow me to absorb and embed the knowledge imparted by the book. A book is more likely to engage me when it aligns with my current drives and interests - when its advice is practical and I can reason about how it would apply to initiatives I am currently pursuing.  
 
 Wrestling with texts that you are struggling to consume ends up _blocking_ your reading queue for far too long, leading to large [opportunity costs](https://en.wikipedia.org/wiki/Opportunity_cost) being incurred. To solve the above problems, I've come up with a solution which I'm going to call _Lean Reading_.
 

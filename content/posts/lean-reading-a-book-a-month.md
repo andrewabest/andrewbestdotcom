@@ -1,5 +1,5 @@
 ---
-title: "Lean Reading - A Book a Month"
+title: "Lean Reading - a Book a Month"
 date: 2018-08-15T10:00:00+10:00
 draft: false
 ---

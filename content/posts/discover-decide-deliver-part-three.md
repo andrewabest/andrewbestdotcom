@@ -5,3 +5,5 @@ draft: true
 ---
 
 Build / measure / learn
+
+TODO: Something about who should participate? Who will we impact / who will impact us / who percieves they may be impacted?

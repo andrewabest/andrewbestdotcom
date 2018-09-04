@@ -35,7 +35,7 @@ The second problem, _spending too long in up-front planning_, we solve **now**.
 Decide
 ======
 
-At this point we should have not invested an large amount of time and effort in discovery, and so will not be tempted to give into [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Loss_aversion_and_the_sunk_cost_fallacy) when making a decision to proceed or not with a given initiative. 
+At this point we should have not invested a large amount of time and effort in discovery, and so will not be tempted to give into [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Loss_aversion_and_the_sunk_cost_fallacy) when making a decision to proceed or not with a given initiative. 
 
 Making a decision should be relatively quick, and most importantly, based on empirical data.
 
@@ -63,7 +63,7 @@ The *most important* part of this step is to understand that we are **not** esti
 
 Estimation as a tool to fix scope, drive 'accountability', and railroad software development initiatives is why the #NoEstimates movement gained some steam. In the real world, businesses need some assurance around how much they will likely need to invest to see a desired return.
 
-It is critical to understand is that what we are attempting to do with our up-front estimation is to **create a budget within which we are confident we can succeed**. Or in other words - we need to create a budget within which success is likely.
+It is critical to understand that what we are attempting to do with our up-front estimation is to **create a budget within which we are confident we can succeed**. Or in other words - we need to create a budget within which success is likely.
 
 I want to take a moment to  belabour the above point even further. I've used the word _budget_ instead of estimate. It is important to know that the ulitmate output of our up-front estimation isn't an "estimate". An estimate implies an assumption that the scope of work will remain reasonably constant, and that accountability will be driven by tracking actuals against the up-front estimate. This is actively harmful behaviour in a software delivery, but one I still encounter far too often, usually at larger enterprises with more arduous, dogmatic governance processes. The ultimate output of our up-front estimation is a _budget_. It is an amount of money and time within which we can guide a software delivery, accommodate change and risk, and make decisions at the correct time to make them, all contributing to delivering _a successful outcome_ before the budget is exhausted. 
 
@@ -79,9 +79,9 @@ So how do we go about crafting our estimate?
 
 _Experts estimate only_
 
-The best estimates come from people who have delivered a lot of software in a variety of environments and conditions, _on the tools_. The context they have built over this time gives people an innate sense of how long things take, from simple forms to complex system of systems concerns, and what can impact those timelines.
+The best estimates come from people who have delivered a lot of software in a variety of environments and conditions, _on the tools_. The context they have built over this time gives people an innate sense of how long things take, from simple forms to complex system-of-systems concerns, and what can impact those timelines.
 
-They also have a historical mental catalog of 'this shape solution takes around this long to produce' to santiy check against.
+They also have a historical mental catalog of 'this shape solution takes around this long to produce' to sanity check against.
 
 _Wrap your arms around it_
 
@@ -129,7 +129,7 @@ If we have an appropriately-bounded software initiative defined by our [Discover
 
 _Create a high level solution architecture_
 
-We need to know roughly what technical components will comprise our solution. It may not matter if we use Angular or React for our web front end, but it will certainly impact us if we need to use Xamarin instead of Cordova for cross-platform mobile, or need to host in AWS EC2 auto scale groups for our compute, instead of Azure Web Applications. Fundamental technical decisions will have an impact on time and budget.
+We need to know roughly what technical components will comprise our solution. It may not matter if we use Angular or React for our web front end, but it will certainly impact us if we need to use Xamarin instead of Cordova for cross-platform mobile, or need to host in AWS EC2 auto scaling groups for our compute, instead of Azure Web Applications. Fundamental technical decisions will have an impact on time and budget.
 
 The main rule here is to defer as many decisions as possible until it is the appropriate time to make them, during delivery. And if you aren't the one on the ground delivering, remember: no one likes being hung by someone else's rope.
 

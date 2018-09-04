@@ -65,7 +65,7 @@ Estimation as a tool to fix scope, drive 'accountability', and railroad software
 
 It is critical to understand is that what we are attempting to do with our up-front estimation is to **create a budget within which we are confident we can succeed**. Or in other words - we need to create a budget within which success is likely.
 
-I want to take a moment to  belabour the above point even further. I've used the word _budget_ instead of estimate. It is important to know that the ulitmate output of our up-front estimation isn't an "estimate". An estimate implies an assumption that the work to be done will remain reasonably constant, and that accountability will be driven by tracking actuals towards the estimate. This is actively harmful behaviour in a software delivery, but one I still encounter far too often, usually at larger enterprises with more arduous, dogmatic governance processes. The ultimate output of our up-front estimation is a _budget_. It is an amount of money and time within which we can guide a software delivery, accommodate change and risk, and make decisions at the correct time to make them, all contributing to delivering _a successful outcome_ before the budget is exhausted. 
+I want to take a moment to  belabour the above point even further. I've used the word _budget_ instead of estimate. It is important to know that the ulitmate output of our up-front estimation isn't an "estimate". An estimate implies an assumption that the scope of work will remain reasonably constant, and that accountability will be driven by tracking actuals against the up-front estimate. This is actively harmful behaviour in a software delivery, but one I still encounter far too often, usually at larger enterprises with more arduous, dogmatic governance processes. The ultimate output of our up-front estimation is a _budget_. It is an amount of money and time within which we can guide a software delivery, accommodate change and risk, and make decisions at the correct time to make them, all contributing to delivering _a successful outcome_ before the budget is exhausted. 
 
 Will we be _done_ by the time the budget is exhausted? Unlikely, most software initiatives are rarely ever 'done'. There are always other things that could be done. But what we have delivered by the time the budget is exhausted will be enough for us to ship, realise a return, satisify stakeholders, and contribute to the business goals identified in [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/).
 
@@ -85,13 +85,15 @@ They also have a historical mental catalog of 'this shape solution takes around 
 
 _Wrap your arms around it_
 
-We have our proposed solution scope from our Discover phase - this might be in the form of an Impact Map, or a set of wire frames, or some rough sketches on paper. Whatever format it is in, we need to be able to 'wrap our arms around it' so that we can estimate how much effort it will take to produce it.
+We have our proposed solution scope from our Discover phase - this might be in the form of an Impact Map, or a set of wire frames, or some rough sketches on paper. Whatever format it is in, we need to be able to 'wrap our arms around it', to estimate how much effort it will take to produce it.
 
-The Dan North article referenced previously elicits interesting fact in regards to estimate sizing: the more resolution or detail we attempt to plan to up front, the larger estimates tend to become! This means that if we do have a set of detailed wireframes, it is likely that our estimate will be larger than that if we had estimated against our Impact Map's high-level functional statements.
+The Dan North article referenced previously elicits interesting fact in regards to estimate sizing: the more resolution or detail we attempt to plan to up front, the larger estimates tend to become! This means that if we have a set of detailed wireframes, it is likely that our estimate will be larger than that if we had estimated against our Impact Map's high-level functional statements.
 
 If we are working with a business who understands the constraints and realities of software delivery, we may want to harness the fact that [scarcity drives successful innovation](https://hbr.org/2011/01/the-number-one-key-to-innovati) and estimate on less granular information - confident that we can work in close collaboration with that business to make appropriate decisions to deliver a successful outcome within a leaner project budget.
 
 If we know we are working in an organization that has less mature software delivery capabilities, where _"everything is a priority"_, we may want to go into more detail, knowing that we are likely to need both more planning collateral to drive hard conversations regarding scope and budget as the delivery evolves and changes and needs to adapt, and more budget to deal with the inflexibility of stakeholders for that adaptation to occur.
+
+Often enough businesses who have a mature software delivery function will still want some clarity and assurance on the shape of a solution up-front - a tangible 'future-state' view of what the solution _may_ look like. It should be of no surprise to anyone that businesses are hesistant to commit time, money, and effort to pursuing initiatives that they cannot visualise a potential end-state for. **This is entirely rational, reasonable, and normal**.
 
 My personal preference when estimating a given initiative is to have a reasonable view on the high level _Functions_ the system presents, the _Fixed Overheads_ required to build the system (such as setting up a CI/CD pipeline), and any _Cross-Cutting Concerns_ that are likely to impact any function delivered within the system (such as WCAG compliance).
 
@@ -109,7 +111,9 @@ as opposed to
 - User Management
 ```
 
-It matters less about any specific granularity, and more that you understand the granularity you used during estimation when you start delivering. If we have this information on hand, we can drive conversations during delivery to say "We budgeted x days for User Management, but given the scope discovered over the last weeks of delivery, we now can see it will take y days", and we can drive a conversation around whether we trade scope, or increase budget, to accommodate our current reality.
+I've found this level of granularity in my experience to produce good estimates that can inform a budget - budgets within which myself and my teams have succeeded time and again, whilst adapting to change and dealing with risks that have arisen during those deliveries.  Using this level of granularity also provides a level of detail to customers or stakeholders around what shape our solution is likely to take, providing that additional clarity and assurance mentioned previously. 
+
+Having an understanding of how our estimate was constructed can also help us drive conversations during Deliver. We may say, for example "We budgeted x days for User Management, but given new information discovered over the last week of delivery, we now anticipate it will take y days", and we can drive a conversation around whether we trade scope, or increase budget, to accommodate our current reality.
 
 _Use the right units_
 
@@ -121,7 +125,7 @@ _Understand the scopes propensity to grow or change_
 
 How sure are you of the proposed solution scope? This is quite a subjective question, and will always depend on your unique situation. Sometimes a solution scope is both very obvious, and quite limited due to its nature. At other times, it can be very amorphous, with stakeholders only having a vague idea of what ultimately needs to be delivered.
 
-If we have an appropriately-bounded software initiative defined by our [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) phase, understand the environment we will be delivering within, and have a good understanding of the scope's propensity to grow, we should be both well positioned to support the anticipated change during our delivery by planning for it within our estimate, and confident that the _number_ of functions present will not fluctuate to a magnitude that will impact the estimate.
+If we have an appropriately-bounded software initiative defined by our [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) phase, understand the environment we will be delivering within, and have a good understanding of the scope's propensity to grow, we should be both well positioned to support the anticipated change during our delivery by accomodating for it within our estimate, and confident that the _number_ of functions present will not fluctuate to a magnitude that will impact the estimate.
 
 _Create a high level solution architecture_
 
@@ -147,9 +151,9 @@ _Summary_
 
 The information suggested above should not take long to gather, create, and validate. Our ideal timeframe will be days, not weeks. Once it is on hand, we have everything we need to **create a budget within which we are confident we can succeed**.
 
-For larger projects that involve multiple phases or milestones, I will always estimate the first or most well-understood milestone using the above technique, and then use statistical forecasting techniques to attempt to predict a program level budget. [Troy Magennis](http://focusedobjective.com/people/) has published [some excellent free materials and tools](http://focusedobjective.com/forecasting-techniques-effort-versus-reward/) for this that I have utilized with great success before.
+For larger projects that involve multiple phases or milestones, I will always estimate the first or most well-understood milestone using the above technique, and then use statistical forecasting techniques to attempt to predict a program-level budget. [Troy Magennis](http://focusedobjective.com/people/) has published [some excellent free materials and tools](http://focusedobjective.com/forecasting-techniques-effort-versus-reward/) for this that I have utilized with great success before.
 
-Always remember, and communicate to your customers and stakeholders: spending more time up-front discovering and qualifying scope usually won't change it's size, it simply provides a diminishing additional amount of assurance to them as to how big it may be. Make your decision as soon as you have enough information and confidence to do so.
+Always remember, and communicate to your customers and stakeholders: spending more time up-front discovering and qualifying scope usually won't change it's size (although it may impact the budget!), it simply provides a diminishing additional amount of assurance to them as to how big it may be. Make your decision as soon as you have enough information and confidence to do so.
 
 What Are Our Risks, Assumptions, Issues, and Dependencies
 ---------------------------------------------------------
@@ -174,7 +178,7 @@ _Summary_
 
 Our RAID map will serve a few purposes:
 
-- It will further inform our estimate and budget
+- It will further inform our budget
 - It will surface risk and allow us to take it into account when deciding
 - It will further align our stakeholders participating at this point of the process
 

@@ -4,7 +4,7 @@ date: 2018-07-30T16:00:00+10:00
 draft: false
 ---
 
-_This is the first part of a three part series. The other posts in the series are coming soon, and will be linked to when available_
+_This is the first part of a three part series in which I cover my methods of delivering successful business outcomes via software. The other posts in the series are coming soon, and will be linked to when available_
 
 Backstory
 =========

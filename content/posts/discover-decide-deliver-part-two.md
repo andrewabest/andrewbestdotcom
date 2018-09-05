@@ -4,7 +4,7 @@ date: 2018-09-03T18:31:04+10:00
 draft: true
 ---
 
-_This is the second part of a three part series in which I cover my methods of delivering outcomes via software, using a mixture of best practice, agility, and lean methods._
+_This is the second part of a three part series in which I cover my methods of delivering successful business outcomes via software_
 
 [Part One: Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/)
 
@@ -65,7 +65,7 @@ Estimation as a tool to fix scope, drive 'accountability', and railroad software
 
 It is critical to understand that what we are attempting to do with our up-front estimation is to **create a budget within which we are confident we can succeed**. Or in other words - we need to create a budget within which success is likely.
 
-I want to take a moment to  belabour the above point even further. I've used the word _budget_ instead of estimate. It is important to know that the ulitmate output of our up-front estimation isn't an "estimate". An estimate implies an assumption that the scope of work will remain reasonably constant, and that accountability will be driven by tracking actuals against the up-front estimate. This is actively harmful behaviour in a software delivery, but one I still encounter far too often, usually at larger enterprises with more arduous, dogmatic governance processes. The ultimate output of our up-front estimation is a _budget_. It is an amount of money and time within which we can guide a software delivery, accommodate change and risk, and make decisions at the correct time to make them, all contributing to delivering _a successful outcome_ before the budget is exhausted. 
+I want to take a moment to  belabour the above point even further. I've used the word _budget_ instead of estimate. It is important to know that the ultimate output of our up-front estimation isn't an "estimate". An estimate implies an assumption that the scope of work will remain reasonably constant, and that accountability will be driven by tracking actuals against the up-front estimate. This is actively harmful behaviour in a software delivery, but one I still encounter far too often, usually at larger enterprises with more arduous, dogmatic governance processes. The ultimate output of our up-front estimation is a _budget_. It is an amount of money and time within which we can guide a software delivery, accommodate change and risk, and make decisions at the correct time to make them, all contributing to delivering _a successful outcome_ before the budget is exhausted. 
 
 Will we be _done_ by the time the budget is exhausted? Unlikely, most software initiatives are rarely ever 'done'. There are always other things that could be done. But what we have delivered by the time the budget is exhausted will be enough for us to ship, realise a return, satisify stakeholders, and contribute to the business goals identified in [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/).
 
@@ -111,27 +111,15 @@ as opposed to
 - User Management
 ```
 
-I've found this level of granularity in my experience to produce good estimates that can inform a budget - budgets within which myself and my teams have succeeded time and again, whilst adapting to change and dealing with risks that have arisen during those deliveries.  Using this level of granularity also provides a level of detail to customers or stakeholders around what shape our solution is likely to take, providing that additional clarity and assurance mentioned previously. 
+I've found this level of granularity to produce good estimates that can inform a budget - budgets within which myself and my teams have succeeded time and again, whilst adapting to change and dealing with risks that have arisen during those deliveries. 
 
-Having an understanding of how our estimate was constructed can also help us drive conversations during Deliver. We may say, for example "We budgeted x days for User Management, but given new information discovered over the last week of delivery, we now anticipate it will take y days", and we can drive a conversation around whether we trade scope, or increase budget, to accommodate our current reality.
+Having an understanding of how our estimate was constructed can also help us drive conversations during Deliver. We may say, for example "We budgeted x days for User Management, but given new information discovered over the last week of delivery, we now anticipate it will take y days" - we can drive a conversation around whether we trade scope, or increase budget, to accommodate the current reality of the delivery.
 
 _Use the right units_
 
 Nothing takes "Just an hour" at this granularity. Almost nothing takes "Just an hour" in software development anyway. Between discovering the scope of a particular story, refining it down to an executable state, developing it, testing it, deploying it, verifying it, potentially iterating on it, and ultimately shipping it, even the most innoccuous piece of scope will take longer than you anticipate, as per [Hofstadter's Law](https://en.wikipedia.org/wiki/Hofstadter%27s_law).
 
 As a rule of thumb, _everything takes at least half a day_. No exceptions.
-
-_Understand the scopes propensity to grow or change_
-
-How sure are you of the proposed solution scope? This is quite a subjective question, and will always depend on your unique situation. Sometimes a solution scope is both very obvious, and quite limited due to its nature. At other times, it can be very amorphous, with stakeholders only having a vague idea of what ultimately needs to be delivered.
-
-If we have an appropriately-bounded software initiative defined by our [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) phase, understand the environment we will be delivering within, and have a good understanding of the scope's propensity to grow, we should be both well positioned to support the anticipated change during our delivery by accomodating for it within our estimate, and confident that the _number_ of functions present will not fluctuate to a magnitude that will impact the estimate.
-
-_Create a high level solution architecture_
-
-We need to know roughly what technical components will comprise our solution. It may not matter if we use Angular or React for our web front end, but it will certainly impact us if we need to use Xamarin instead of Cordova for cross-platform mobile, or need to host in AWS EC2 auto scaling groups for our compute, instead of Azure Web Applications. Fundamental technical decisions will have an impact on time and budget.
-
-The main rule here is to defer as many decisions as possible until it is the appropriate time to make them, during delivery. And if you aren't the one on the ground delivering, remember: no one likes being hung by someone else's rope.
 
 _Understand the environment we are delivering within_
 
@@ -141,19 +129,29 @@ Or are we working within state government, with an appointed government Project 
 
 _Understand the team we are delivering with_
 
-Is our team comprised of already-aligned, senior people who are deeply skilled in the technologies that will be used to deliver the proposed solution?
+Is our team comprised of already-aligned, senior people who are deeply skilled in the technologies that will be used to deliver the proposed solution? Or are we working to build capability, upskill juniors, and transfer knowledge? Will there be a significant amount of effort to go from [Forming to Performing](https://en.wikipedia.org/wiki/Tuckman%27s_stages_of_group_development)?
 
-Or are we working to build capability, upskill juniors, and transfer knowledge?
+Are we all going to be co-located? Or will it be delivered remotely?
 
-Are we all going to be co-located? Or will there be a remote portion?
+_Understand the scope's propensity to grow or change_
+
+Sometimes an initiative's scope is both very obvious, and quite limited due to its nature - if we deliver X, then we will realise Y. At other times, it can be very amorphous, with it not being immediately obvious how we are going to achieve our initiative's goal - we may be working on solving a complex problem, whatever we have assumed up-front may need a lot of validation, and it is likely we will need time to iterate on and pivot our solution to arrive at a successful outcome. 
+
+If we have a well-defined software initiative shaped within our [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) phase, understand the environment we will be delivering within, and have a good understanding of the scope's propensity to grow, we should be well positioned to support the anticipated change during our delivery by accomodating for it within our budget.
+
+_Create a high level solution architecture_
+
+We need to know roughly what technical components will comprise our solution. It may not matter if we use Angular or React for our web front end, but it will certainly impact us if we need to use Xamarin instead of Cordova for cross-platform mobile, or need to host in AWS EC2 auto scaling groups for our compute, instead of Azure Web Applications. Fundamental technical decisions will have an impact on time and budget.
+
+The main rule here is to defer as many decisions as possible until it is the appropriate time to make them, during delivery. And if you aren't the one on the ground delivering, remember: no one likes being hung by someone else's rope.
 
 _Summary_
 
-The information suggested above should not take long to gather, create, and validate. Our ideal timeframe will be days, not weeks. Once it is on hand, we have everything we need to **create a budget within which we are confident we can succeed**.
+The information suggested above should not take long to gather, create, and validate. Our ideal timeframe will be hours, not days or weeks, to put it together. Once it is on hand, we have everything we need to **create a budget within which we are confident we can succeed**.
 
-For larger projects that involve multiple phases or milestones, I will always estimate the first or most well-understood milestone using the above technique, and then use statistical forecasting techniques to attempt to predict a program-level budget. [Troy Magennis](http://focusedobjective.com/people/) has published [some excellent free materials and tools](http://focusedobjective.com/forecasting-techniques-effort-versus-reward/) for this that I have utilized with great success before.
+Spending too much time up-front discovering and qualifying scope to inform cost is both costly, will anchor  stakeholders, and creates noise and risk as unvalidated assumptions pile up - make a call as early as practicable on your budget and move on.
 
-Always remember, and communicate to your customers and stakeholders: spending more time up-front discovering and qualifying scope usually won't change it's size (although it may impact the budget!), it simply provides a diminishing additional amount of assurance to them as to how big it may be. Make your decision as soon as you have enough information and confidence to do so.
+For larger projects that involve multiple phases or milestones, I will always estimate the first or most well-understood milestone as above, and then use probabilistic forecasting techniques to attempt to predict a program-level budget - and communicate this accordingly. [Troy Magennis](http://focusedobjective.com/people/) has published [some excellent free materials and tools](http://focusedobjective.com/forecasting-techniques-effort-versus-reward/) for this that I have utilized with great success before.
 
 What Are Our Risks, Assumptions, Issues, and Dependencies
 ---------------------------------------------------------
@@ -164,9 +162,9 @@ To make a decision on a given software initiative, we need to understand the **r
 
 An effective way to discover and quanitfy the risks posed by a given software initiative is to create a [RAID map](https://www.groupmap.com/map-templates/raid-analysis/). Whilst _risk_ is only the first item in a RAID map, the RAID map as a whole is a risk management tool.
 
-The best way to build a RAID map is collaboratively with our customer, involving technical and non-technical stakeholders who will either be impacted by the solution, or will impact the solution. Ensuring we have a reasonably wide amount of input will ensure previously unforeseen issues will be highlighted, captured, discussed, and understood.
+The best way to build a RAID map is collaboratively with our customer, involving technical and non-technical stakeholders who will either be impacted by the solution, or will impact the solution. Ensuring we have an appropriate variety and range of input will ensure previously unforeseen issues will be highlighted, captured, discussed, and understood.
 
-Some examples of things that I have seen come up during building a RAID map with my customers, which have directly impacted my estimates, are:
+Some examples of things that I have seen come up during building a RAID map with my customers, which have directly impacted the required budget, are:
 
 - Assumption: solution must be WCAG AA compliant
 - Risk: current automated build process is brittle
@@ -182,7 +180,7 @@ Our RAID map will serve a few purposes:
 - It will surface risk and allow us to take it into account when deciding
 - It will further align our stakeholders participating at this point of the process
 
-One we have it on hand, we can move on from cost and risk, and start looking at **return**.
+One we have it on hand, and have made appropriate affordances in our budget for applicable entires, we can move on from cost and risk, and start looking at **return**.
 
 What Is Our Expected Return On Investment
 -----------------------------------------
@@ -203,22 +201,24 @@ The more complicated you make this calculation, the more assumptions you are bak
 
 Instead we should simply be comparing our [SMART](https://www.mindtools.com/pages/article/smart-goals.htm) goal's agreed measurable metrics over a period of time to the cost of the delivery and ongoing operational costs.
 
-Ideally we want the outcome of this comparison to point to **at least a 300% return on investment**. Sound high? It's not.
+So what consitutes a favourable comparison? _It is likely that it needs to be higher than you think_.
 
 The Standish Group's annual [CHAOS report](https://www.standishgroup.com/outline), which surveys thousands of companies each year to analyse software project successes and failures, as of 2016 still shows a huge 70% of projects either outright failing, or not meeting a bar that can be called successful. It also reports over half of all undertaken software projects costing double their original estimates.
 
 Whilst it would be easy to attribute these failures to poor software delivery maturity on behalf of both vendors and customers, the reality is that software is that delivering software is **hard** (we should always seek to be  [humble programmers](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)), and even the best delivery team, working for an ideal customer, can and will face unforeseen challenges that threaten the success of the initiative from time to time. 
 
-This is why we want at least a 3x return. 
+We need to take risk into account when considering return. The higher the risk you will have to face to deliver an initiative, the higher you want your return to be.
 
-If the numbers don't stack up, but the goal is important to the business, go back to the drawing board with your scope and estimates - there is almost always a way to deliver less software to achieve very similar goals, as per the [Pareto Principle] (https://en.wikipedia.org/wiki/Pareto_principle).
+If your initiative seems to be reasonably low-risk, a 2x return may be acceptable. If it is moderate risk, those risks may materialize and quickly eat into a 2x return - we may need a 3x anticipated return to justify pulling the trigger on it. If it is high risk, it is not unreasonable to think you may want 5-10x your initial anticipated cost. There isn't a hard-and-fast rule here, but once again, an acceptable ROI _is likely higher than you think_.
+
+If the numbers don't stack up, but the goal is important to the business, go back to the drawing board with your scope and estimates - there is almost always a way to deliver less software to achieve very similar goals, as per the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle).
 
 ---
 A slight aside on the topic of ROI is the idea of _technical initiatives_.
 
 What do we do with technical initiatives that do not contribute directly to a businesses products or services, but either reduce latent risk in a platform or improve it in such a way that future initiatives will benefit from it? These initiatives likely aren't products of our [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) phase, but are put forward by development teams who are the custodians of the platform.
 
-The answer is to *always strive to have an initiative deliver some sort of value for the business*. You can almost always find a business initiative to deliver on when tacking a technical initiative - so if you want to rewrite a component in a new technology for example, find a significant business improvement to that component that could be delivered at the same time. If you can't find _anything_, then why undertake the technical initiative? We will have software before, and will have software after - this is not success.
+The answer is to **always strive to have an initiative deliver some sort of value for the business**. You can almost always find a business initiative to deliver on when tacking a technical initiative - so if you want to rewrite a component in a new technology for example, find a significant business improvement to that component that could be delivered at the same time. If you can't find _anything_, then why undertake the technical initiative? We will have software before, and will have software after - this is not success.
 
 Another perspective on technical initiatives, in this [post](https://gojko.net/2018/08/30/sprints-marathons-root-canals.html) penned by Gojko Adzic, is that if we allowed technical teams a budget for appropriate technical improvements and refactorings, we largely wouldn't need to devote large chunks of time to aggregate technical tasks.
 
@@ -229,7 +229,7 @@ Decision Time
 
 Proceeding with a software initiative that is not likely to deliver an appropriate return on investment is not only costly from a financial point of view for the business, but the knowledge that the initiative is borderline profitable or worse tends to permeate the delivery. This leads to both substandard product development due to overly constrained resources, and to general negative impacts on delivery teams and cultures due to the oppresive nature of cut-throat product development.
 
-If the return on investment meets our minimum threshold of 300%, the initiative gets the green light! If it doesn't, we either abandon the initiative, or find a way to reshape or redefine it until it represents a safe and sound investment to the business.
+If the return on investment is acceptable, the initiative gets the green light! If it doesn't, we either abandon the initiative, or find a way to reshape or redefine it until it represents a sound investment to the business.
 
 It is likely that our business may have a set of initiatives that are being evaluated at the same time, all with different costs and returns, addressing different stakeholder needs, that we will need to prioritise somehow in order to best benefit the business. All initiatives will have an associated [Opportunity Cost](https://en.wikipedia.org/wiki/Opportunity_cost). One way to base our prioritisation on empirical data, just as we based our decision to proceed with a given initiative on empirical data, is to calculate the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/) for each opportunity, and prioritise accordingly.
 

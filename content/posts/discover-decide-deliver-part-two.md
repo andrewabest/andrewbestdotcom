@@ -14,7 +14,7 @@ Part Three: Deliver
 
 ---
 
-We have now spent some time [Discovering](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) potential problems or opportunities within our or our partner's business, ensuring we have identified business goals that our delivery can contribute to, and spent a commensurate amount of time building a high level solution scope. 
+We have now spent some time [discovering](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) potential problems or opportunities within our or our partner's business, ensuring we have identified business goals that our delivery can contribute to, and spent a commensurate amount of time building a high level solution scope. 
 
 If you haven't read the first post I'd encourage you to do so, as it wil be assumed knowledge for this post - if you find yourself wondering why something is missing here, it was likely covered during [Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/), or will be covered in Deliver.
 

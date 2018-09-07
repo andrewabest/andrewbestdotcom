@@ -1,10 +1,10 @@
 ---
 title: "Discover, Decide, Deliver: Part Two, Decide"
-date: 2018-09-03T18:31:04+10:00
-draft: true
+date: 2018-09-07T16:30:00+10:00
+draft: false
 ---
 
-_This is the second part of a three part series in which I cover my methods of delivering successful business outcomes via software_
+_This is the second part of a three part series in which I cover my methods of delivering successful business outcomes via software._
 
 [Part One: Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/)
 
@@ -42,7 +42,7 @@ Making a decision should be relatively quick, and most importantly, based on emp
 Data
 ----
 
-To make a decision, we need the right data on hand. We cannot decide on whether to proceed with a software initiative without the requisite minimum amount of data present - any coversations that occur in the absence of this data are simply speculation and conjecture. We want to avoid the [HiPPO](http://www.askahippo.com/) based decision, or any other gut-feel type decision making, and proceed with eyes wide open.
+To make a decision, we need the right data on hand. We cannot decide on whether to proceed with a software initiative without the requisite minimum amount of data present - any coversations that occur in the absence of this data are simply speculation and conjecture. We want to avoid the [HiPPO](http://www.askahippo.com/)-based decision, or any other gut-feel type decision making, and proceed with eyes wide open.
 
 The three pieces of data we need to gather at this stage are:
 
@@ -59,9 +59,9 @@ How Much Will It Cost
 
 The first data we need on hand to make the decision is _How much will it cost?_ - and that will involve estimation.
 
-The *most important* part of this step is to understand that we are **not** estimating trying to figure out exactly how much effort it will take to produce precisely what we have defined to date - what we end up delivering in any given software initiative rarely resembles exactly what we understood up-front. 
+The *most important* part of this step is to understand that we are **not** estimating trying to figure out exactly how much effort it will take to produce precisely what we have defined to date - what we end up delivering in any given software initiative rarely resembles what we understood up-front. 
 
-Estimation as a tool to fix scope, drive 'accountability', and railroad software development initiatives is why the #NoEstimates movement gained some steam. In the real world, businesses need some assurance around how much they will likely need to invest to see a desired return.
+Estimation as a tool to fix scope, drive "accountability", and railroad software development initiatives is why the _#NoEstimates_ movement gained some steam. Unlike the _#NoEstimates_ movement, in my world, businesses need some assurance around how much they will likely need to invest to see a desired return.
 
 It is critical to understand that what we are attempting to do with our up-front estimation is to **create a budget within which we are confident we can succeed**. Or in other words - we need to create a budget within which success is likely.
 
@@ -113,7 +113,7 @@ as opposed to
 
 I've found this level of granularity to produce good estimates that can inform a budget - budgets within which myself and my teams have succeeded time and again, whilst adapting to change and dealing with risks that have arisen during those deliveries. 
 
-Having an understanding of how our estimate was constructed can also help us drive conversations during Deliver. We may say, for example "We budgeted x days for User Management, but given new information discovered over the last week of delivery, we now anticipate it will take y days" - we can drive a conversation around whether we trade scope, or increase budget, to accommodate the current reality of the delivery.
+Having an understanding of how our budget was constructed can also help us drive conversations during Deliver. We may say, for example "We estimated x days for User Management, but given new information discovered over the last week of delivery, we now anticipate it will take y days" - we can drive a conversation around whether we trade scope, or increase budget, to accommodate the current reality of the delivery.
 
 _Use the right units_
 

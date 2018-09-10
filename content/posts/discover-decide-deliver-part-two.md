@@ -205,7 +205,7 @@ So what consitutes a favourable comparison? _It is likely that it needs to be hi
 
 The Standish Group's annual [CHAOS report](https://www.standishgroup.com/outline), which surveys thousands of companies each year to analyse software project successes and failures, as of 2016 still shows a huge 70% of projects either outright failing, or not meeting a bar that can be called successful. It also reports over half of all undertaken software projects costing double their original estimates.
 
-Whilst it would be easy to attribute these failures to poor software delivery maturity on behalf of both vendors and customers, the reality is that software is that delivering software is **hard** (we should always seek to be  [humble programmers](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)), and even the best delivery team, working for an ideal customer, can and will face unforeseen challenges that threaten the success of the initiative from time to time. 
+Whilst it would be easy to attribute these failures to poor software delivery maturity on behalf of both vendors and customers, the reality is that delivering software is **hard** (we should always seek to be  [humble programmers](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)), and even the best delivery team, working for an ideal customer, can and will face unforeseen challenges that threaten the success of the initiative from time to time. 
 
 We need to take risk into account when considering return. The higher the risk you will have to face to deliver an initiative, the higher you want your return to be.
 

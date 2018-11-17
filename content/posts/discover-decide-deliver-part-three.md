@@ -245,6 +245,6 @@ Successful software outcomes are created not just in delivery.
 
 Successful outcomes start being crafted at the very first discussion, in [discovering](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) what we can do, from funneling the unlimited opportunities that may be present down to something that can be clearly connected with a business goal. 
 
-We can then further enhance our chances of success by applying a right-sized effort in [deciding](https://www.andrew-best.com/posts/discover-decide-deliver-part-two/) whether to proceed or not, based on an evaluation of the overall financial benefit of the initiative, and risk vs reward. 
+We can then further enhance our chances of success by applying a right-sized effort in [deciding](https://www.andrew-best.com/posts/discover-decide-deliver-part-two/) whether to proceed or not, based on an evaluation of risk vs reward. 
 
 Delivery is the final step in enacting our success, a combination of an environment that champions transparency, ownership, and value delivered;  of teams that employ discipline, capability, and pragmatism; of high levels of communication and engagement between all parties of the delivery; and of ensuring we optimise toward learning, both within ourselves, and our products. 

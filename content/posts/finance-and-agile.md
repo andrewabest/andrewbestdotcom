@@ -1,5 +1,5 @@
 ---
-title: "Agile Finance"
+title: "Finance and Agile"
 date: 2018-11-18T18:00:00+10:00
 draft: true
 ---

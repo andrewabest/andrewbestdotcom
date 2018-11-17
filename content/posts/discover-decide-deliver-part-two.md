@@ -199,9 +199,17 @@ To calculate our return on investment, we need:
 
 The more complicated you make this calculation, the more assumptions you are baking into it, and the less likely it is going to be a good metric in determining success. Several articles, such as [this one on CIO.com](https://www.cio.com/article/2969353/enterprise-software/why-you-should-always-estimate-roi-before-buying-enterprise-software.html) suggest estimating ROI by applying many different factors and adjustments. Most of this is subjective complexity, and will ultimately make it much harder to determine whether a given software initiative has succeeded or not, as most of the inputs are largely unmeasurable.
 
-Instead we should simply be comparing our [SMART](https://www.mindtools.com/pages/article/smart-goals.htm) goal's agreed measurable metrics over a period of time to the cost of the delivery and ongoing operational costs.
+Instead we should simply be comparing our [SMART](https://www.mindtools.com/pages/article/smart-goals.htm) goal's agreed measurable metrics (their return) over a period of time to the cost of the delivery and ongoing operational costs, whilst ensuring we respect the _[time value of money](https://en.wikipedia.org/wiki/Time_value_of_money)_.
 
-So what consitutes a favourable comparison? _It is likely that it needs to be higher than you think_.
+To do this, we want to calculate the [Net Present Value](https://hbr.org/2014/11/a-refresher-on-net-present-value) of our project over its predicted period. We will use our goal's agreed metric as the _income_ input, and the total cost of the delivery per period as the _expenses_. You'll need to have an idea of your company's _cost of finance_ - this may be the rate of return shareholders expect on their investment, or the overall cost of finance via borrowing your company incurs. The organization's CFO should know what the number is.
+
+If our calculation works out to a positive number, then we have a net positive investment _if we achieve our goal_. 
+
+If we want additional perspective on our investment, such as viewing the _profitability_ of it, as opposed to the _value_, we could also look at calculating its [Internal Rate Of Return](https://en.wikipedia.org/wiki/Internal_rate_of_return)
+
+This may all sound a little accounting-heavy, but it is an important part of how a business will evaluate whether to proceed with a financial investment, or how it will select between a set of investments. It is based on the fact that _a dollar today is worth more than a dollar in a year's time_. If you want to learn more about business finance without having to become an accountant or get an MBA, I highly recommend the book [Financial Intelligence](https://www.amazon.com/Financial-Intelligence-Revised-Managers-Knowing-ebook/dp/B00AXS5EAK) by Karen Berman and Joe Knight.
+
+Even if our calculations above indicate positive results, we need to take into account the risk of our initiative. How postive do our numbers need to be? _It is likely that they need to be higher than you think_.
 
 The Standish Group's annual [CHAOS report](https://www.standishgroup.com/outline), which surveys thousands of companies each year to analyse software project successes and failures, as of 2016 still shows a huge 70% of projects either outright failing, or not meeting a bar that can be called successful. It also reports over half of all undertaken software projects costing double their original estimates.
 
@@ -209,7 +217,7 @@ Whilst it would be easy to attribute these failures to poor software delivery ma
 
 We need to take risk into account when considering return. The higher the risk you will have to face to deliver an initiative, the higher you want your return to be.
 
-If your initiative seems to be reasonably low-risk, a 2x return may be acceptable. If it is moderate risk, those risks may materialize and quickly eat into a 2x return - we may need a 3x anticipated return to justify pulling the trigger on it. If it is high risk, it is not unreasonable to think you may want 5-10x your initial anticipated cost. There isn't a hard-and-fast rule here, but once again, an acceptable ROI _is likely higher than you think_.
+If your initiative seems to be reasonably low-risk, a 1.5-2x return may be acceptable. If it is moderate risk, those risks may materialize and quickly eat into a 2x return - we may need a 3x anticipated return to justify pulling the trigger on it. If it is high risk, it is not unreasonable to think you may want 5-10x your initial anticipated cost. There isn't a hard-and-fast rule here, but once again, an acceptable ROI _is likely higher than you think_.
 
 If the numbers don't stack up, but the goal is important to the business, go back to the drawing board with your scope and estimates - there is almost always a way to deliver less software to achieve very similar goals, as per the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle).
 

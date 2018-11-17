@@ -7,8 +7,6 @@ draft: false
 
 I've always enjoyed sharing hard-earned knowledge with the community. I've always found my best talks are those that are distillations of real experiences. I've spoken at DDD conferences across Australia, at community events such as the Brisbane .NET user group - Australia's largest tech user group, and have delivered many more internal presentations and workshops to clients and employers.
 
-I'm planning to deliver at least one talk before the end of 2018.
-
 # Previous
 
 * **Sat 2 December 2017** => [DDD Brisbane - Finding The Sweet Spot](https://speakerdeck.com/andrewabest/finding-the-sweet-spot)

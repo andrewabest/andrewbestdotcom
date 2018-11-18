@@ -10,7 +10,7 @@ _This is the second part of a three part series in which I cover my methods of d
 
 [Part Two: Decide](https://www.andrew-best.com/posts/discover-decide-deliver-part-two/)
 
-Part Three: Deliver
+[Part Three: Deliver](https://www.andrew-best.com/posts/discover-decide-deliver-part-three/)
 
 ---
 

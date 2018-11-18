@@ -1,7 +1,7 @@
 ---
 title: "Discover, Decide, Deliver: Part Three, Deliver"
 date: 2018-11-18T18:00:00+10:00
-draft: true
+draft: false
 ---
 
 _This is the final instalment of a three part series in which I cover my methods of delivering successful business outcomes via software._
@@ -70,7 +70,7 @@ _Autonomy, Mastery, and Purpose_
 
 A capable and aligned team still needs to be motivated to continually kick goals for their organization. Motivation for developers is intrinsic - it comes from within themselves. Many modern studies have been done on what motivates people, which expel the notion of _carrots and sticks_ being effective, and instead work on creating environments in which motivation is best cultivated. [Dan Pink's Drive](https://www.youtube.com/watch?v=u6XAPnuFjJc) is a must-read for anyone looking for a deeper understanding on what motivates people who participate in creative work like software development.
 
-So how to we support and nurture intrinsic motivation in our teams? 
+So how do we support and nurture intrinsic motivation in our teams? 
 
 * **Autonomy** - allow teams to choose what problems the work on, who they work with, what technologies they utilize, what techniques they employ, when they work, how they work. The more freedom you can give a team in pursuing a goal, the more they will be motivated to own it.
 * **Mastery** - ensure teams have time to master their craft. Allow them to explore new techniques. Embrace failure and learn quickly. Ensure a culture of continuous learning and improvement exists. Encourage and support a high bar for quality and capability.
@@ -145,7 +145,7 @@ _Embrace Reality_
 
 Whilst we progress with our delivery, a litany of eponymous laws will likely strike. [Murphy's Law](https://en.wikiquote.org/wiki/Murphy%27s_law), [Hofstadter's Law](https://en.wikipedia.org/wiki/Hofstadter%27s_law), [Zawinski's Law](https://en.wikipedia.org/wiki/Jamie_Zawinski) and many more - all of these are reflections of the [Volatile, Uncertain, Complex, Ambiguous](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity) problem spaces we work in whilst delivering software. Outside of the more common laws of software, many many more unique circumstances will arise in your particular initiative that will challenge your team, and move them away from any theoretical _optimum path_.
 
-The _most important thing_ we can do when confronted by situations that are less than favourable is to ***lean into the pain***. It is imperative we both clearly understand what has led to our current reality, and can articulate that both within our team, and to our stakeholders and sponsors. If we can do this, we can then make sensible decisions stepped in reality. If we don't do this, we delay inevitable and more severe decision making and consequences.
+The _most important thing_ we can do when confronted by situations that are less than favourable is to ***lean into the pain***. It is imperative we both clearly understand what has led to our current reality, and can articulate that both within our team, and to our stakeholders and sponsors. If we can do this, we can then make sensible decisions steeped in reality. If we don't do this, we delay inevitable and more severe decision making and consequences.
 
 We must strongly resist and dispel **reality distortion fields** - I've worked with people in my time, whether they be developers, project managers, or stakeholders and sponsors, who will attempt to create alternate realities based on either out-of-date information, or on pure subjective opinion. These realities tend to be created to serve people's individual motivations - saving face on the delivery side, on budget and timeline adherence, or in sponsoring the initiative. One classic conversation that many people will be familiar with centres around why the team isn't meeting up-front estimates, or aren't tracking a Gantt chart correctly.
 
@@ -196,7 +196,7 @@ These are all important problems to solve, particularly if our product takes off
 
 Most people will answer with the classic _It Depends TM_ for this question. But we can effectively generalize this to something that has merit - _Solve today's problems_. From our example above - we won't get very far if we don't have our tenancy architecture decided upon, as we will only be able to accommodate a single customer! However we can likely put off thinking about advanced concerns like optimizing our product's hosting costs for another day (sorry, you'll have to wait a little while longer before you deep-dive into Kubernetes), allowing us to focus on delivering the must-have features for our MVP.
 
-This does not mean we should turn a blind eye to future concerns. It is unwise to not be aware of, and to think about and plan for the future. We also need to make sure decisions we make now do not paint us into a corner for future concerns. However the future is uncertain and vague, and today is concrete and clear - so we should _solve_ today's problems, and _plan_ for the future's problems. 
+This does not mean we should turn a blind eye to future concerns. It is unwise to not be aware of, and to not think about and plan for the future. We also need to make sure decisions we make now do not paint us into a corner for future concerns. However the future is uncertain and vague, and today is concrete and clear - so we should _solve_ today's problems, and _plan_ for the future's problems. 
 
 _Pragmatism In All Things_
 
@@ -228,7 +228,7 @@ One of the biggest dangers facing software teams is when they attempt to use an 
 
 One of the more insidious ways this creeps in is via scaling and governance mechanisms. Large organizations with existing established silos and poor cross-function collaboration tend to favour tools like [SAFe](https://www.scaledagileframework.com/), which allow them to assign decision-making roles in software initiatives far away from the actual development teams. Just look at the infographic on that page, and take stock of what portion of it the development team occupies.
 
-Other organizations will employ Agile coaches, plaster their walls with propaganda, and adopt an entire way of working that purports to be Agile, whilst completely missing the fundamental tenants of it.
+Other organizations will employ Agile coaches, plaster their walls with propaganda, and adopt an entire way of working that purports to be Agile, whilst completely missing the fundamental tenets of it.
 
 In either case, these organizations will say they are Agile. I once had an IT manager proudly proclaim to me "I get Agile. I've done the Scrum course. I know this stuff!", all the while forcing his teams into weekly "status update" meetings where they were forced to provide hours worked / hours left on tasks to PMs who would then communicate it back to _The Business_.
 

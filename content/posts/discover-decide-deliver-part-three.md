@@ -4,7 +4,7 @@ date: 2018-11-18T18:00:00+10:00
 draft: true
 ---
 
-_This is the final installment of a three part series in which I cover my methods of delivering successful business outcomes via software._
+_This is the final instalment of a three part series in which I cover my methods of delivering successful business outcomes via software._
 
 [Part One: Discover](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/)
 
@@ -25,7 +25,7 @@ I'd like to preface this with a disclaimer: this is not an 'introduction to Agil
 
 If you're looking for a primer on the _why_ of Agile software development, I highly recommend listening to [Kyle Aretae](https://www.linkedin.com/in/kyle-aretae/) talk about [Diamond Agile](https://agileuprising.libsyn.com/diamond-agile) on the Agile Uprising podcast. As Kyle states, the basic tenants are always:
 
-> Small teams, aggresive prioritization, feedback loops, small batches of work, long term investment.
+> Small teams, aggressive prioritization, feedback loops, small batches of work, long term investment.
 
 Just Words
 ---
@@ -52,7 +52,7 @@ _Strong Development Capability_
 
 Forming the backbone of a successful software delivery are strong software developers. There is no substitute for this capability, and it comes first in our list of conditions for successful software delivery. Developers are at the center of executing a given initiative, and need to be capable of doing so. This does not mean we expect our developers to be _[10x Developers](https://softwareengineering.stackexchange.com/questions/179616/a-good-programmer-can-be-as-10x-times-more-productive-than-a-mediocre-one)_, _Rockstars_, or any other vaguely offensive archetype. What it does mean is that we expect the team to have a balance of skills that when wielded can solve the problems present in the delivery in efficient and effective ways.
 
-Strong software developers can reason about pragmatic solutions to difficult problems. They have many tools in their toolbelts, and have solved many problems with these tools over time. They truly understand what extensible, maintanable, testable solutions look like. They can reason about how to wisely invest their efforts for greatest reward.
+Strong software developers can reason about pragmatic solutions to difficult problems. They have many tools in their toolbelts, and have solved many problems with these tools over time. They truly understand what extensible, maintainable, testable solutions look like. They can reason about how to wisely invest their efforts for greatest reward.
 
 Software development initiatives are accumulations of thousands of small decisions, and many of these decisions are made by the developers on the delivery team. A team of strong software developers can ensure that this accumulation forms a strong and resilient solution. In a team whose skills do not match the task at hand, the accumulation may end up being death by a thousand cuts. 
 
@@ -60,7 +60,7 @@ _One Team, One Dream_
 
 Next to capability in importance is culture and alignment. And this isn't just in the IT department, or the development team, this is within the organization. An organizations culture in relation to software development can mean software delivery can be viewed as a collaborative journey towards a goal, or as a negotiated set of compromises towards fulfilling a mandate. 
 
-In some companies, who have a divide between _The Business_ and _IT_, who treat IT as service and cost center instead of as a creater of value, software delivery will always be a challenge. These organizations will always view _on time and on budget_ to be more important than _value delivered_. Decision making will tend to fall outside of development teams, with teams given solutions to build, instead of problems to solve. When things don't go to plan, these organizations will encourage will seek to attribute blame and fault, rather than acknowledge the fact that they are solving challenging problems, and to learn from failure.
+In some companies, who have a divide between _The Business_ and _IT_, who treat IT as service and cost centre instead of as a creator of value, software delivery will always be a challenge. These organizations will always view _on time and on budget_ to be more important than _value delivered_. Decision making will tend to fall outside of development teams, with teams given solutions to build, instead of problems to solve. When things don't go to plan, these organizations will encourage will seek to attribute blame and fault, rather than acknowledge the fact that they are solving challenging problems, and to learn from failure.
 
 In other companies, people work together collaboratively towards a clearly communicated goal. Everyone assumes everyone else is working with integrity, discipline, accountability, effort, and respect, doing the best job that they can given their environment, information, and tools, to progress towards the goal. Decision making is subordinated to the appropriate level, with leaders and managers understanding that the best people to create the solutions are those closest to the problem being solved. These organizations will focus on embracing reality, empowering their people, collaborating to solve challenging problems, and ultimately create value-driven cultures that are _far more effective_ at delivering successful outcomes. 
 
@@ -80,11 +80,11 @@ I'm planning on writing a more detailed post on this topic in the future, so sta
 
 _Discipline Is Mandatory_
 
-A running "joke" I hear from many program and project managers in large enterprises is that Agile is just software development with no up front planning, ad-hoc decision making, no estimation or budgeting discipline, and no accountability. As one program manager at a large utility company recently scoffed to me, "I wouldn't use Agile to build a dam!". He musn't be aware of the margins built into construction project budgets to accommodate the risk of their up-front planning.
+A running "joke" I hear from many program and project managers in large enterprises is that Agile is just software development with no up front planning, ad-hoc decision making, no estimation or budgeting discipline, and no accountability. As one program manager at a large utility company recently scoffed to me, "I wouldn't use Agile to build a dam!". He must not be aware of the margins built into construction project budgets to accommodate the risk of their up-front planning.
 
 What is more likely is that they have fallen prey to attempting to manage an "Agile" delivery run by a team that lacks the discipline to execute successfully. 
 
-Discipline is hard. It involves _constantly_ scruitinizing, inspecting, adapting, foreshadowing, planning, scheming, spiking, communicating, collaborating, all whilst still _getting shit done_. Good teams attack problems aggressively. They do not postpone. Someone once told me that good developers have low pain thresholds - as soon as something bites them, they need to prevent it from biting again, immediately. Nothing gets swept under the rug. Everyone owns something. They are responsible for the outcome, and accountability is high within the team. They have hard conversations within the team and the wider organization. They do all of the less-glamorous stuff that is required to support and facilitate good Agile software delivery. They do the needful. They admit failure. They improve.
+Discipline is hard. It involves _constantly_ scrutinizing, inspecting, adapting, foreshadowing, planning, scheming, spiking, communicating, collaborating, all whilst still _getting shit done_. Good teams attack problems aggressively. They do not postpone. Someone once told me that good developers have low pain thresholds - as soon as something bites them, they need to prevent it from biting again, immediately. Nothing gets swept under the rug. Everyone owns something. They are responsible for the outcome, and accountability is high within the team. They have hard conversations within the team and the wider organization. They do all of the less-glamorous stuff that is required to support and facilitate good Agile software delivery. They do the needful. They admit failure. They improve.
 
 All of these behaviours are backed by discipline - individuals don't wait for 'motivation' to refine the backlog, send out communications, drive a dependency, or validate with users. They have the discipline to do what needs to be done, when it needs to be done.
 
@@ -97,7 +97,7 @@ Execution
 
 _Always Be Setting Expectations_
 
-Whilst it doesnt have the same ring to it as _Always Be Closing_, setting expectations is **the most important part** of software delivery. It should be the very first thing we do, and the very last thing we do. 
+Whilst it doesn't have the same ring to it as _Always Be Closing_, setting expectations is **the most important part** of software delivery. It should be the very first thing we do, and the very last thing we do. 
 
 Business stakeholders with aligned expectations are connected to reality. They are armed with up-to-date information about the software initiative being delivered. They were well-primed at the start of it, they participate in constant feedback loops, they are supplied detailed summaries at short and frequent intervals, they are involved in all decision making, and they have an always-evolving but clear overall picture of the delivery. They feel like they are "on the journey" - one being directed by a competent and capable delivery engine.
 
@@ -137,7 +137,7 @@ Whether we are working in a startup or a large enterprise, we can still embrace 
 
 _Feedback_
 
-Along with feedback on what we develop, we need to ensure we cultivate a strong feedback culture within our team. Feedback is what helps us grow. It allows us to understand what we are doing well, and what we can improve. It should always be timely - the best time to give and recieve feedback is _immediately after_ the subject of the feedback has occurred. It should always be supplied in a way that [Feeds Forward](https://www.forbes.com/sites/kevinkruse/2012/07/19/feedforward-coaching-for-performance/#f12c1da235de), and does not just focus on the negative.
+Along with feedback on what we develop, we need to ensure we cultivate a strong feedback culture within our team. Feedback is what helps us grow. It allows us to understand what we are doing well, and what we can improve. It should always be timely - the best time to give and receive feedback is _immediately after_ the subject of the feedback has occurred. It should always be supplied in a way that [Feeds Forward](https://www.forbes.com/sites/kevinkruse/2012/07/19/feedforward-coaching-for-performance/#f12c1da235de), and does not just focus on the negative.
 
 The best way to do this is to embed an understanding in the team that feedback isn't just encouraged - it is expected. This should come from leadership, and be fostered within the team.
 
@@ -147,7 +147,7 @@ Whilst we progress with our delivery, a litany of eponymous laws will likely str
 
 The _most important thing_ we can do when confronted by situations that are less than favourable is to ***lean into the pain***. It is imperative we both clearly understand what has led to our current reality, and can articulate that both within our team, and to our stakeholders and sponsors. If we can do this, we can then make sensible decisions stepped in reality. If we don't do this, we delay inevitable and more severe decision making and consequences.
 
-We must strongly resist and dispell **reality distortion fields** - I've worked with people in my time, whether they be developers, project managers, or stakeholders and sponsors, who will attempt to create alternate realities based on either out-of-date information, or on pure subjective opinion. These realities tend to be created to serve people's individual motivations - saving face on the delivery side, on budget and timeline adherance, or in sponsoring the initiative. One classic conversation that many people will be familiar with centers around why the team isn't meeting up-front estimates, or aren't tracking a Gaant chart correctly.
+We must strongly resist and dispel **reality distortion fields** - I've worked with people in my time, whether they be developers, project managers, or stakeholders and sponsors, who will attempt to create alternate realities based on either out-of-date information, or on pure subjective opinion. These realities tend to be created to serve people's individual motivations - saving face on the delivery side, on budget and timeline adherence, or in sponsoring the initiative. One classic conversation that many people will be familiar with centres around why the team isn't meeting up-front estimates, or aren't tracking a Gantt chart correctly.
 
 There is a simple antidote to these sort of politics: visibility, transparency, and lots of open, two-way communication. 
 
@@ -243,7 +243,7 @@ Repose
 
 Successful software outcomes are created not just in delivery. 
 
-Successful outcomes start being crafted at the very first discussion, in [discovering](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) what we can do, from funneling the unlimited opportunities that may be present down to something that can be clearly connected with a business goal. 
+Successful outcomes start being crafted at the very first discussion, in [discovering](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) what we can do, from funnelling the unlimited opportunities that may be present down to something that can be clearly connected with a business goal. 
 
 We can then further enhance our chances of success by applying a right-sized effort in [deciding](https://www.andrew-best.com/posts/discover-decide-deliver-part-two/) whether to proceed or not, based on an evaluation of risk vs reward. 
 

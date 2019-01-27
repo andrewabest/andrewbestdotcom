@@ -153,7 +153,7 @@ Some googling around the error message and the library comes up with a bunch of 
 
 So why is it breaking on my `.docx` stream, but not my `.pdf` stream? 
 
-I talk this over with [Tod](https://twitter.com/todthomson) and [Tristan](https://twitter.com/TristanMenzel) as I'm hacking away on it Friday afternoon at Beer O'Clock. Conspiracy theories raised include:
+I talk this over with [Tod](https://twitter.com/todthomson) and [Tristan](https://github.com/tristanmenzel) as I'm hacking away on it Friday afternoon at Beer O'Clock. Conspiracy theories raised include:
 
 * Is it a HTTP header issue - `Content*`, `Accept*`?
 * Does the Azure Function host see the `docx` is a Zip format and do something whacky with it while marshalling the payload?

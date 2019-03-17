@@ -1,6 +1,6 @@
 ---
 title: "The Line in The Sand"
-date: 2019-02-17T11:00:00+10:00
+date: 2019-03-20T09:00:00+10:30
 draft: true
 ---
 
@@ -15,17 +15,19 @@ It is not reasonable to expect our stakeholders can simply be provided with seve
 What Will I _Get_?
 ==================
 
-At the start of our engagement, we set a goal that we were seeking to achieve, and a budget we thought was reasonable within which we could achieve success. Achieving this goal is the _outcome_ we want, and the expectation as to whether we will achieve this or not is the most important to manage - however often this will be a lag matric. We will only know whether we have succeeded once the software is running in production, and we can interpret our data to determine whether we hit our goal metric.
+At the start of our engagement, we set a goal that we are seeking to achieve, and a budget within which we think we can achieve it. Achieving this goal is the _outcome_ we want, and the expectation as to whether we will achieve it or not is the most important to manage - however often this will be a lag matric. We will only know whether we have succeeded once the software is running in production and can measure our level of success.
 
-But most stakeholders - Product Owners or otherwise - care about more than just achieving the goal. They want to know about what they are going to get - what will the software do? Will it have all of the functionality that has been requested by its future userbase? Will it have that report the CFO requested last week after he sat in on sprint review? Are we going to be able to implement configurable communications out to workflow users? 
+Most stakeholders - Product Owners or otherwise - care about more than just the goal. They want to know about what they are going to get - what will the software do? Will it have all of the functionality that has been requested? Will it have that report the CFO requested last week after he sat in on sprint review? Are we going to be able to implement configurable communication types for users? 
 
-At the start of a given software delivery, we have a target _outcome_ - progressing toward our [identified goals](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) via the software we will build. The expectation we set at the start is that we have a level of confidence that we can achieve the goal within the available budget, we will make frugal decisions in regard to budget expenditure to make sure we maintain the capacity to respond to change, and that we will incrementally progress toward our goal or milestone and deal with new information in a _just in time_ fashion, as it is discovered.
+At the start of a software delivery, we have a target _outcome_ - progressing toward our [identified goals](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) via our outputs - the software we write. The expectation we set at the start is that we have confidence that we can achieve the goal within the available budget, we will make frugal decisions in regard to budget expenditure to make sure we maintain the capacity to respond to change, and that we will incrementally progress toward our goal and deal with new information in a _just in time_ fashion, as it is discovered.
 
-As the delivery progresses and our solution takes shape, our backlog is likely to continue to grow. It will tend to both house things that absolutely _must be done_ to deliver on the intended outcome, and things that are _nice to have_. Often there isn't a clear distinction between these two things in our backlog. The backlog is prioritised, but aside from the top small handful of items, who is to say whether item 50 is more important than 51? A large linear product backlog is also a _very poor_ tool for imparting a clear view of what it represents in our real-world product.
+As the delivery progresses and our solution takes shape, our backlog will continue to grow. It will tend to both house things that absolutely _must be done_ to deliver on the intended outcome, and things that are _nice to have_. 
+
+Often there isn't a clear distinction between these two things in our backlog. The backlog is prioritised, but aside from the top small handful of items, who is to say whether item 50 is more important than 51? A large linear product backlog is also a _very poor_ tool for imparting a clear view of what it represents in our real-world product.
 
 ---
 
- As an aside, for a better solution to this problem, check out [User Story Mapping](https://agilevelocity.com/agile-tools/story-mapping-101/) - I'm waiting for a great software product to arrive that does this well and can tie into developer workflows.
+ As an aside, for a better solution to the problems caused by linear product backlogs, check out [User Story Mapping](https://agilevelocity.com/agile-tools/story-mapping-101/) - I'm waiting for a great software product to arrive that does this well and can tie into developer workflows.
 
  ---
 

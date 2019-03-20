@@ -1,7 +1,7 @@
 ---
 title: "The Line in The Sand"
-date: 2019-03-20T09:00:00+10:30
-draft: true
+date: 2019-03-21T08:00:00+10:30
+draft: false
 ---
 
 Expectation management is _the most important thing_ we do in software delivery. It should be the first thing we do, and the last thing we do. My feelings for expectation management are evidenced by the fact it is the very first thing I covered in the _Execution_ section of [Discover, Decide, Deliver Part Three: Deliver](https://www.andrew-best.com/posts/discover-decide-deliver-part-three/).

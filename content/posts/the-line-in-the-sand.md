@@ -42,7 +42,7 @@ The solution I employ to solve this problem is relatively straightforward, but v
 ================== Line In The Sand ==================
 ```
 
-With your product owner and team, collectively work to move **everything** that absolutely _must_ be done to achieve our target outcome above this item. All nice to have's stay below it. 
+With your product owner and team, collectively work to move **everything** that absolutely _must_ be done to achieve our target outcome above this item. All nice to haves stay below it. 
 
 This can also be defined in another way: things that, come hell or high water, we are going to do our utmost to get done; and things we probably aren't going to do unless we have a budget surplus and our customer would like to continue to invest. 
 

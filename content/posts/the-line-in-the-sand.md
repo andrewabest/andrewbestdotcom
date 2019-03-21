@@ -6,7 +6,7 @@ draft: false
 
 Expectation management is _the most important thing_ we do in software delivery. It should be the first thing we do, and the last thing we do. My feelings for expectation management are evidenced by the fact it is the very first thing I covered in the _Execution_ section of [Discover, Decide, Deliver Part Three: Deliver](https://www.andrew-best.com/posts/discover-decide-deliver-part-three/).
 
-My colleague [Darren Neimke](https://twitter.com/digory) came to me recently to discuss how to best set expectations with his product owner on an engagement he was currently delivering. He felt like he and the team were making good progress, were publishing a wealth of delivery health information, and were well-poised to deliver a solid outcome within the available project budget; but was not convinced that their product owner had the same level of confidence or clarity.
+My colleague [Darren Neimke](https://twitter.com/digory) came to me recently to discuss how to best set expectations with his Product Owner on an engagement he was delivering. He felt like he and the team were making good progress, were publishing a wealth of delivery health information, and were well-poised to deliver a solid outcome within the available project budget; but was not convinced that their Product Owner had the same level of confidence or clarity.
 
 Setting expectations in software delivery is hard. We work with abstract definitions of work in a prioritised product backlog, with abstract defintions of capacity and progress with velocity and burnup, and against a rapidly evolving set of software and accompanying understanding. 
 
@@ -15,7 +15,7 @@ It is not reasonable to expect our stakeholders can simply be provided with seve
 What Will I _Get_?
 ==================
 
-At the start of our engagement, we set a goal that we are seeking to achieve, and a budget within which we think we can achieve it. Achieving this goal is the _outcome_ we want, and the expectation as to whether we will achieve it or not is the most important to manage - however often this will be a lag matric. We will only know whether we have succeeded once the software is running in production and can measure our level of success.
+At the start of our engagement, we set a goal that we are seeking to achieve, and a budget within which we think we can achieve it. Achieving this goal is the _outcome_ we want, and the expectation as to whether we will achieve it or not is the most important to manage - however often this will be a lag metric. We will only know whether we have succeeded once the software is running in production and can measure our level of success.
 
 Most stakeholders - Product Owners or otherwise - care about more than just the goal. They want to know about what they are going to get - what will the software do? Will it have all of the functionality that has been requested? Will it have that report the CFO requested last week after he sat in on sprint review? Are we going to be able to implement configurable communication types for users? 
 
@@ -42,7 +42,7 @@ The solution I employ to solve this problem is relatively straightforward, but v
 ================== Line In The Sand ==================
 ```
 
-With your product owner and team, collectively work to move **everything** that absolutely _must_ be done to achieve our target outcome above this item. All nice to haves stay below it. 
+With your Product Owner and team, collectively work to move **everything** that absolutely _must_ be done to achieve our target outcome above this item. All nice to haves stay below it. 
 
 This can also be defined in another way: things that, come hell or high water, we are going to do our utmost to get done; and things we probably aren't going to do unless we have a budget surplus and our customer would like to continue to invest. 
 

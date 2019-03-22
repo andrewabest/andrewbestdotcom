@@ -10,7 +10,7 @@ I'm currently living in [Adelaide, Australia](https://time.is/Adelaide).
 
 # What am I doing now?
 
-* Building the foundational Readify Adelaide team - if you are an awesome developer, data, or designer - [drop me an email](mailto:andrew.best@readify.net)! 
+* Building the foundational Readify Adelaide team - if you are an awesome developer, data person, or designer - [drop me an email](mailto:andrew.best@readify.net)! 
 * Re-establishing my roots in the Adelaide tech scene. Need a [speaker](https://www.andrew-best.com/speaking/) for an event? Want to talk about [solving problems](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) you and your team are currently tackling? Need someone to help represent technology within your business? I'm more than happy to buy the coffees ☕☕
 * Still spending _100 hours with Kubernetes_, the minimum amount of time I feel is required to get a decent understanding of any complex tool
 * Mentoring [Karma](https://www.codewithkarma.com/), a journeyman developer  and all around awesome human in our QLD team

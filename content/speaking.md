@@ -9,10 +9,11 @@ I've always enjoyed sharing hard-earned knowledge with the community. I've alway
 
 # Upcoming
 
-* **Wed 8 May 2019** => [Adelaide .NET User Group - Visual Studio 2019 Launch](https://www.meetup.com/Adelaide-dotNET/events/258974130/?rv=ea1_v2&_xtd=gatlbWFpbF9jbGlja9oAJDY1YWUwN2E1LTM5ZGQtNDYzNy1hNzc5LTZmMjEwNGViY2Q0OQ)
+TBA!
 
 # Previous
 
+* **Wed 8 May 2019** => [Adelaide .NET User Group - Visual Studio 2019 Launch](https://www.meetup.com/Adelaide-dotNET/events/258974130/?rv=ea1_v2&_xtd=gatlbWFpbF9jbGlja9oAJDY1YWUwN2E1LTM5ZGQtNDYzNy1hNzc5LTZmMjEwNGViY2Q0OQ)
 * **Sat 2 December 2017** => [DDD Brisbane - Finding The Sweet Spot](https://speakerdeck.com/andrewabest/finding-the-sweet-spot)
 * **Sat 12 August 2017** => [DDD Melbourne - Finding The Sweet Spot](https://speakerdeck.com/andrewabest/finding-the-sweet-spot)
 * **Tue 19 July 2016** => [Brisbane .NET User Group - Automating AWS](https://speakerdeck.com/andrewabest/automating-aws)

@@ -200,3 +200,7 @@ A quick `F5`, fire up Postman and hit it with my `.docx` payload and...
 UPDATE:
 
 Here is the [GitHub issue](https://github.com/Azure/azure-functions-host/issues/3162) I've lodged for the above. 
+
+**DOUBLE UPDATE:**
+
+Someone has very helpfully pointed out that [it likely _was_ a header issue](https://github.com/Azure/azure-functions-host/issues/3162#issuecomment-461501029). Thanks [WueF](https://github.com/WueF)!   

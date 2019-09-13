@@ -21,7 +21,7 @@ The conventions in question look at method usage, using [Mono.Cecil](https://git
 
 What George had discovered is that although lines of code in the supplied types clearly did not conform to the conventions, Conventional wasn't picking it up because the lines of code, once the code was compiled, _didn't actually exist in the supplied types_.
 
-Two .NET features emit dynamic types at compile time that assist in enabling the features functionality: _async_, and _yield_. There is plenty of literature covering what each of those features do - we are more interested in understanding _how they compile_ here.
+Two .NET features dynamically emit types at compile time that assist in enabling the features functionality: _async_, and _yield_. There is plenty of literature covering what each of those features do - we are more interested in understanding _how they compile_ here.
 
 For an _async_ method like this:
 
@@ -85,7 +85,7 @@ private sealed class <GetDate>d__1 : IAsyncStateMachine
 }
 ```
 
-There it is! Notice that the original method's instructions have moved _into_ the emitted dynamic type. That means they no longer exist in the declaring type. Which is why Conventional wasn't finding them! It needed to pull in and consider any dynamic _async_ types emitted during compilation, as they may contain code it needed to inspect!
+There it is! Notice that the original method's instructions have moved _into_ the emitted type. That means they no longer exist in the declaring type. Which is why Conventional wasn't finding them! It needed to pull in and consider any compiler-generated _async_ types emitted during compilation, as they may contain code it needed to inspect!
 
 It is a similar story with _yield_. For an iterator block like this:
 
@@ -128,9 +128,9 @@ private sealed class <GetDates>d__1 : IEnumerable<DateTime>, IEnumerable, IEnume
 
 As with the _async_ variant, the original method's instructions have been moved into the emitted type.
 
-The fix for both of the above cases was to identify the dynamic types in question, pull them in, and inspect _their_ method instructions along with those of the supplied 'parent' types, to ensure all source code lines are covered by the convention.
+The fix for both of the above cases was to identify the emitted types in question, pull them in, and inspect _their_ method instructions along with those of the supplied types, to ensure all source code lines are covered by the convention.
 
-How do we find these emitted types? Well luckily .NET leaves us a breadcrumb trail we can follow from the parent types to the emitted types, via two attributes that are applied during compilation: `AsyncStateMachineAttribute`, and `IteratorStateMachineAttribute`.
+How do we find these emitted types? Luckily the .NET compiler leaves us a breadcrumb trail we can follow from the parent types to the emitted types, via two attributes that are applied during compilation: `AsyncStateMachineAttribute`, and `IteratorStateMachineAttribute`.
 
 You can find _async_ emitted types like so:
 

@@ -4,16 +4,18 @@ date: 2019-09-13T15:00:00+09:30
 draft: false
 ---
 
-I have a somewhat popular Nuget package which I maintain named [Conventional](https://github.com/andrewabest/conventional). It helps developers maintain standards within their codebases, doing things like making sure types have appropriate access modifiers on property accessors, making sure naughty things are not in use throughout a codebase (Looking at you `DateTime.Now`), and making sure types are located in sensible places - in amongst a whole host of other useful things. It works with your unit testing suite of choice.
+I have an open source .NET library which I maintain named [Conventional](https://github.com/andrewabest/conventional). 
+
+It helps developers maintain standards within their codebases, doing things like making sure types have appropriate access modifiers on property accessors, making sure naughty things are not in use throughout a codebase (Looking at you `DateTime.Now`), and making sure types are located in sensible places - in amongst a whole host of other useful things. It works with your unit testing suite of choice.
 
 Conventional relies heavily on .NET reflection to do its job. Most uses of Conventional look something like the following:
 
 1. Using `Assembly`, get all of the accessible types within a given assembly
-2. Using Linq, reduce this set down to a target set of interest (Often locating types that implement a certain interface, `ICommand` for example, or that are located under a given namespace)
+2. Using Linq, reduce this set down to a target set of interest - often locating types that implement a certain interface, `ICommand` for example, or that are located under a given namespace
 3. Using Conventional and its built-in conventions, assert that the types meet a given convention or set of conventions
 4. If there are any anomalies detected, fail the test and supply a list of the non-conforming types so that they might be corrected
 
-An ex-colleague and all around awesome developer friend of mine [George Kinsman](https://twitter.com/GeorgeKinsman) raised an [issue](https://github.com/andrewabest/Conventional/issues/62) on Conventional's GitHub repository recently. He had discovered something interesting: Conventional wasn't failing tests as it should have in certain scenarios.
+All around awesome developer and ex-colleague of mine [George Kinsman](https://twitter.com/GeorgeKinsman) raised an [issue](https://github.com/andrewabest/Conventional/issues/62) on Conventional's GitHub repository recently. He had discovered something interesting: Conventional wasn't failing tests as it should have in certain scenarios.
 
 The conventions in question look at method usage, using [Mono.Cecil](https://github.com/jbevain/cecil), within the types you supply Conventional. Conventional uses Cecil to inspect all of the lines of code (or `Instructions`) within method bodies in the supplied types, and looks for non-conforming code.
 

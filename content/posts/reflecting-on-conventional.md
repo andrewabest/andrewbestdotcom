@@ -152,4 +152,4 @@ type.ToTypeDefinition()
 
 And with those types in hand, we can inspect _their_ contents - which means we can ensure all of the code we are intending to inspect with our conventions is actually inspected!
 
-If you are an existing Conventional user, you might want to `Update-Package Best.Conventional` to ensure you are achieving the correct amount of code coverage. Version six also saw a set of breaking improvements focussed on property related conventions being more explicit. Happy testing!
+If you are an existing Conventional user, you might want to `Update-Package Best.Conventional` to ensure you are achieving the correct amount of code coverage. Version `6.0.0` also saw a set of breaking improvements focussed on property related conventions being more explicit. Happy testing!

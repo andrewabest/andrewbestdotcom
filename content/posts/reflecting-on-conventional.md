@@ -85,7 +85,7 @@ private sealed class <GetDate>d__1 : IAsyncStateMachine
 }
 ```
 
-There it is! Notice that the original method's instructions have moved _into_ the emitted type. That means they no longer exist in the declaring type. Which is why Conventional wasn't finding them! It needed to pull in and consider any compiler-generated _async_ types emitted during compilation, as they may contain code it needed to inspect!
+There it is! Notice that the original method's instructions have _moved into_ the emitted type. That means they no longer exist in the declaring type. Which is why Conventional wasn't finding them! It needed to pull in and consider any compiler-generated _async_ types emitted during compilation, as they may contain code it needed to inspect!
 
 It is a similar story with _yield_. For an iterator block like this:
 
@@ -151,3 +151,5 @@ type.ToTypeDefinition()
 ```
 
 And with those types in hand, we can inspect _their_ contents - which means we can ensure all of the code we are intending to inspect with our conventions is actually inspected!
+
+If you are an existing Conventional user, you might want to `Update-Package Best.Conventional` to ensure you are achieving the correct amount of code coverage. Version six also saw a set of breaking improvements focussed on property related conventions being more explicit. Happy testing!

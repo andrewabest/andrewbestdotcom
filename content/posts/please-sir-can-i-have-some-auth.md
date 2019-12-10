@@ -6,7 +6,7 @@ draft: false
 
 I've been building a _Thing_. This thing works with the Microsoft Azure platform, and allows users to provision and modify certain Azure resources outside of the Azure Portal itself.
 
-The _Thing_ is entirely an Angular SPA. To work with Microsoft Azure resources, it communicates via the [Azure REST API](https://docs.microsoft.com/en-us/rest/api/azure/). It doesn't use any special frameworks or SDKs to do so, just plain old HTTP calls to resource endpoints, and some TypeScript type goodness to provide some type safety around inputs and outputs to and from the API.
+The _Thing_ is entirely an Angular SPA. To work with Microsoft Azure resources, it communicates via the [Azure REST API](https://docs.microsoft.com/en-us/rest/api/azure/). It doesn't use any special frameworks or SDKs to do so, just plain old HTTP calls to resource endpoints, and some TypeScript goodness to provide some type safety around inputs and outputs to and from the API.
 
 I'm working with the Azure Management API published under https://management.azure.com. I'm using [MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics), Microsoft's authentication library for JS, and successor of [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-js/wiki/ADAL-basics), to facilitate authentication to the Azure Management API.
 
@@ -17,7 +17,7 @@ Azure AD Setup
 
 Before attempting to query the API I knew I was going to need to create an Azure Active Directory App Registration for my app to authenticate against - this is analogous to a [Client](https://tools.ietf.org/html/rfc6749#section-1.1) Registration in OAuth parlance.
 
-(This is a trend that permeates Microsoft and Azure - calling well-known things by different names)
+(This is a trend that permeates Microsoft and Azure - referring to well-known things by different names)
 
 In the App Registration I configured the appropriate `Authentication` properties to allow my Angular app to authenticate against it - redirect URLs and the like, I won't go into detail as these are straight-forward, and were not the source of my headaches.
 

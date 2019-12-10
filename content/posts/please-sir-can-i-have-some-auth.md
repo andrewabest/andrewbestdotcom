@@ -27,7 +27,7 @@ With Azure AD, `API Permissions` serve two purposes:
 
 1. They enforce the consent process - this has two layers in Azure Active Directory. A Directory Admin must consent to the App Registration having a given permission on behalf of the organization, and individual users must consent to the permission being allowed during their authentication process
 
-2. They provide permission to access resources - once the organization and the user have consented to a given permission, it can be requested by an application to provide access to resources. Each resources will define its own permission model
+2. They provide permission to access resources - once the organization and the user have consented to a given permission, it can be requested by an application to provide access to resources. Each resource will define its own permission model
 
 ![The API Permissions Page](/have-some-auth/api-permissions.png)
 

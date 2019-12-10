@@ -1,6 +1,6 @@
 ---
 title: "Azure REST API: Please Sir, Can I Have Some Auth?"
-date: 2019-12-10T15:00:00+09:30
+date: 2019-12-10T15:00:00+10:30
 draft: false
 ---
 

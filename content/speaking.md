@@ -13,6 +13,7 @@ TBA!
 
 # Previous
 
+* **Sat 23 Dec 2019** => [DDD Adelaide - Organizer and MC](https://dddadelaide.com)
 * **Wed 8 May 2019** => [Adelaide .NET User Group - Visual Studio 2019 Launch](https://www.meetup.com/Adelaide-dotNET/events/258974130/?rv=ea1_v2&_xtd=gatlbWFpbF9jbGlja9oAJDY1YWUwN2E1LTM5ZGQtNDYzNy1hNzc5LTZmMjEwNGViY2Q0OQ)
 * **Sat 2 December 2017** => [DDD Brisbane - Finding The Sweet Spot](https://speakerdeck.com/andrewabest/finding-the-sweet-spot)
 * **Sat 12 August 2017** => [DDD Melbourne - Finding The Sweet Spot](https://speakerdeck.com/andrewabest/finding-the-sweet-spot)

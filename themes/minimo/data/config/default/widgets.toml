@@ -5,7 +5,7 @@ logo = "/images/logo.png"
 
 [recent_posts]
 title = ""
-length = 10
+length = 50
 excludeTypes = ["page"]
 
 [search]

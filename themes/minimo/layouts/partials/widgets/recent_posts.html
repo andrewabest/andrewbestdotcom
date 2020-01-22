@@ -13,7 +13,7 @@
   </header>
 
   <ul class='list'>
-  {{ range ( first $length ( where .Site.RegularPages "Type" "not in" $config.excludeTypes ) ) }}
+  {{ range ( first $length ( where (where .Site.RegularPages ".Draft" false) "Type" "not in" $config.excludeTypes) ) }}
     {{ .Render "li" }}
   {{ end }}
   </ul>

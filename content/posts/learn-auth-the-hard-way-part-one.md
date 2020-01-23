@@ -271,4 +271,3 @@ public IActionResult Login()
 The key learning here is from this line: _This URI MUST exactly match one of the Redirection URI values for the Client pre-registered at the OpenID Provider_. This ensures our Authentication Server will only return tokens to a known endpoint configured within it, preventing a range of attacks that could occur otherwise.
 
 Stay tuned for the next installment, in which we will delve into retrieving our Authorization Code, and exchanging that for TOKENS!
-

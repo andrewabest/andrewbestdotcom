@@ -37,7 +37,7 @@ Here are the steps [taken from the specification](https://openid.net/specs/openi
    Identifier.
 ```
 
-In [Part One](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one) we managed to implement the two steps after falling down a spec rabbit-hole. In this post we will continue from the third step.
+In [Part One](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one) we managed to implement the two steps after falling down a _spec rabbit-hole_. In this post we will continue from the third step.
 
 **3. Authorization Server Authenticates the End-User**
 
@@ -65,7 +65,7 @@ Once we have successfully authenticated with our Authentication Server, it is go
     application/x-www-form-urlencoded format...
 ```
 
-And then jump over to RFC 6749 4.1.2
+And then jump over to [RFC 6749 4.1.2](https://tools.ietf.org/html/rfc6749#section-4.1.2)
 ```
 ...
 For example, the authorization server redirects the user-agent by 
@@ -77,7 +77,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 ...
 ```
 
-RFC 6749 4.1.2 and 4.1.2.1, along with the OpenID Connect Specification 3.1.2.6 define the complete response schema, which can be deserialised into the following model
+[RFC 6749 4.1.2](https://tools.ietf.org/html/rfc6749#section-4.1.2) and [4.1.2.1](https://tools.ietf.org/html/rfc6749#section-4.1.2.1), along with the OpenID Connect Specification [3.1.2.6](https://openid.net/specs/openid-connect-core-1_0.html#AuthError) define the complete response schema, which can be deserialised into the following model
 
 ```C#
 public class AuthenticationResponse
@@ -141,7 +141,7 @@ public async Task<IActionResult> Authorize([FromQuery] AuthenticationResponse re
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint)
 
-We have now recieved our Authorization Code, and verified the authenticity of our CSRF and nonce protection measures. We want to exchange these for an Access Token, and ID Token. To do this, we need to construct a valid Access Token Request 
+We have now recieved our Authorization Code, and verified the authenticity of our CSRF protection measure. We want to exchange the code for an Access Token, and ID Token. To do this, we need to construct a valid Access Token Request 
 
 ```
 4.1.3. Access Token Request
@@ -178,7 +178,7 @@ the Token Endpoint using the authentication method registered for
 its client_id, as described in Section 9.
 ```
 
-**New Term Alert** Are we a Confidential Client? Since there are two specifications we are working with, and one sits on top of the other, sometimes progressive disclosure fails and we are confronted with a term we haven't encountered before. If we head over to RFC 6749 and do a quick `Ctrl + f` for `confidential`, we will quickly discover the following:
+🚨 **New Term Alert** 🚨 Are we a Confidential Client? Since there are two specifications we are working with, and one sits on top of the other, sometimes progressive disclosure fails and we are confronted with a term we haven't encountered before. If we head over to [RFC 6749](https://tools.ietf.org/html/rfc6749) and do a quick `Ctrl + f` for `confidential`, we discover the following:
 
 ```
 2.1. Client Types
@@ -201,7 +201,7 @@ Since we are implementing a Client as a server-side web application (a .NET Core
 
 We have registered a client secret of `secret` in our [Identity Server 4](https://github.com/andrewabest/localDevIdentityServer/) instance via its [Secret](http://docs.identityserver.io/en/latest/topics/secrets.html) support.
 
-As per `9.  Client Authentication` in the OpenID Connect specification, the default client authentication mechanism is Basic Authentication, which is further supported by `2.3.1. Client Password` in RFC 6749. Identity Server will happily support Basic Auth or including these credentials in the POST body. Basic Authentication is a well understood mechanism, so we will use that, but won't delve into it here beyond looking at the code we will write to apply it to our token endpoint call. 
+As per [9. Client Authentication](https://openid.net/specs/openid-connect-core-1_0.html#ClientAuthentication) in the OpenID Connect specification, the default client authentication mechanism is Basic Authentication, which is further supported by [2.3.1. Client Password](https://tools.ietf.org/html/rfc6749#section-2.3.1) in RFC 6749. Identity Server will happily support Basic Auth or including these credentials in the POST body. Basic Authentication is a well understood mechanism, so we will use that, but won't delve into it here beyond looking at the code we will write to apply it to our token endpoint call. 
 
 ```C#
 // https://tools.ietf.org/html/rfc6749#section-2.3.1
@@ -223,7 +223,7 @@ Before this step, the Authorization Server would have performed `3.1.3.2.  Token
 
 Now we have supplied the `token` endpoint of our Authorization Server with our Access Code, it is going to want to return us our ID and Access Tokens, and optionally a Refresh token.
 
-`3.1.3.3.  Successful Token Response` from OpenID Connect, along with `4.1.4. Access Token Response` and `5.2. Error Response` from RFC 6749 give us our complete object model that we can deserialize responses into.
+[3.1.3.3. Successful Token Response](https://openid.net/specs/openid-connect-core-1_0.html#TokenResponse) from OpenID Connect, along with [4.1.4. Access Token Response](https://tools.ietf.org/html/rfc6749#section-4.1.4) and [5.2. Error Response](https://tools.ietf.org/html/rfc6749#section-5.2) from RFC 6749 give us our complete object model that we can deserialize responses into.
 
 ```C#
 public class TokenResponse
@@ -241,7 +241,7 @@ public class TokenResponse
 }
 ```
 
-When we are digging through `3.1.3.3.  Successful Token Response` we run across this line
+When we are digging through [3.1.3.3. Successful Token Response](https://openid.net/specs/openid-connect-core-1_0.html#TokenResponse) we run across this line
 
 ```
 3.1.3.3.  Successful Token Response
@@ -253,3 +253,5 @@ When we are digging through `3.1.3.3.  Successful Token Response` we run across 
 **New Spec Alert** Does this mean we need to dig into ANOTHER spec in order to ensure our Client implementation is correct? 🙊🙉🙈
 
 It turns out the answer is no. [RFC 6750](https://tools.ietf.org/html/rfc6750) was originally created to allow for multiple token usage types, with Bearer being the original, and one called "Proof of Possession" to follow. [But it never did](https://leastprivilege.com/2020/01/15/oauth-2-0-the-long-road-to-proof-of-possession-access-tokens/). It seems even published specifications aren't immune to _just-in-case engineering_.
+
+Stay tuned for the final installment, in which we will be shocked to learn how many JW* specifications there are, delve into how crypto is used to make tokens secure, and round out the implementation of our OpenID Connect client!

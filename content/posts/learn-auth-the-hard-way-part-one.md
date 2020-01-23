@@ -4,7 +4,7 @@ date: 2020-01-01T06:00:00+10:00
 draft: true
 ---
 
-This is the first part of a three part series in which we will dive into modern application authentication solutions.
+This is the first part of a three part series in which we dive into modern application authentication solutions.
 
 [Part One: The Hard Way](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one)
 

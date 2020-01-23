@@ -4,7 +4,7 @@ date: 2020-01-01T06:00:00+10:00
 draft: true
 ---
 
-This is the final installment of a three part series in which we will dive into modern application authentication solutions.
+This is the final instalment of a three part series in which we dive into modern application authentication solutions.
 
 [Part One: The Hard Way](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one)
 
@@ -43,7 +43,7 @@ In [Part Two](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#TokenResponseValidation)
 
-We are now on the home stretch, all we need to do is to validate the payload we have received, and then we will have successfully completed the Authorization Code Flow!
+We are now on the home stretch - all we need to do is to validate the payload we have received, and then we will have successfully completed the Authorization Code Flow!
 
 ```
 3.1.3.5.  Token Response Validation
@@ -53,11 +53,11 @@ We are now on the home stretch, all we need to do is to validate the payload we 
 ...
 ```
 
-So this is an interesting piece of advice. The first part of the statement is a cover-all for the OAuth 2.0 spec which isn't particularly useful. If we start our way from `4.1.4. Access Token Response` in RFC 6479, we can see it is mostly ensuring we only accept specified values from our Authorization Server, and ignore anything else - this covers `Section 5.1` as well.
+So this is an interesting piece of advice. The first part of the statement is a cover-all for the OAuth 2.0 spec which isn't particularly useful. If we begin at [4.1.4. Access Token Response](https://tools.ietf.org/html/rfc6749#section-4.1.4) in RFC 6479, we can see it is mostly ensuring we only accept specified values from our Authorization Server, and ignore anything else - this covers [Section 5.1](https://tools.ietf.org/html/rfc6749#section-5.1) as well.
 
-The interesting part comes in advising us to follow `Section 10.12` - which we covered earlier. It was our CSRF protection mechanism for the initial redirection and callback, ensuring unwanted types couldn't randomly call our redirect endpoint. Why would we need to implement CSRF protection on a single HTTPS call to the `token` endpoint? Well we don't need to - it doesn't make any sense to, as the communication isn't succeptible to CSRF. So published specifications can also have _bugs_.
+The interesting part comes in advising us to follow [Section 10.12](https://tools.ietf.org/html/rfc6749#section-10.12) - which we covered earlier. It was our CSRF protection mechanism for the initial redirection and callback, ensuring unwanted types couldn't randomly call our redirect endpoint. Why would we need to implement CSRF protection on a single HTTPS call to the `token` endpoint? Well we don't need to - it doesn't make any sense to, as the communication isn't succeptible to CSRF. Published specifications can also have _bugs_.
 
-Our deserialization process will ensure the statement is adhered to, so let's move on to validating our tokens. I'll only address validation items that apply to us within `3.1.3.7.  ID Token Validation` - the skipped items are configuration-specific, and tend to address less common or more sophisticated scenarios, beyond the scope of this article.
+Our deserialization process will ensure `3.1.3.5` is adhered to, so let's move on to validating our tokens. I'll only address validation items that apply to us within [3.1.3.7. ID Token Validation](https://openid.net/specs/openid-connect-core-1_0.html#IDTokenValidation) - any numbered items I do not mention address less common, more sophisticated scenarios, beyond the scope of this post.
 
 ```
 3.1.3.7.  ID Token Validation
@@ -71,13 +71,13 @@ following manner:
 ...
 ```
 
-🚨 **New Term Alert** 🚨 What is Discovery? Once again, let's `Ctrl+f` our way to success. Way up in `1. Introduction` in the Open ID spec, the following information is offered:
+🚨 **New Term Alert** 🚨 What is Discovery? Once again, let's `Ctrl+f` our way to success. Way up in [1. Introduction](https://openid.net/specs/openid-connect-core-1_0.html#Introduction) in the Open ID spec, the following information is offered:
 
 > This specification assumes that the Relying Party has already obtained configuration information about the OpenID Provider, including its Authorization Endpoint and Token Endpoint locations. This information is normally obtained via Discovery, as described in OpenID Connect Discovery 1.0.
 
-We have been working through the OpenID _Core_ specification, which details the main functionality OpenID Connect layers on top of the OAuth 2.0 spec. However OpenID also defines a number of other specifications dealling with ancillary concerns - one of them being _Discovery_.
+We have been working through the OpenID _Core_ specification, which details the main functionality OpenID Connect layers on top of the OAuth 2.0 spec. However OpenID also defines a [number of other specifications](https://openid.net/developers/specs/) dealing with ancillary concerns - one of them being _Discovery_.
 
-[4.  Obtaining OpenID Provider Configuration Information](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig) within the Discovery specification tells us how to obtain provider information - by issuing a `GET` request to `/.well-known/openid-configuration` - commonly referred to as the 'well known configuration endpoint`.
+[4.  Obtaining OpenID Provider Configuration Information](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig) within the Discovery specification tells us how to obtain provider information - by issuing a `GET` request to `/.well-known/openid-configuration` - commonly referred to as the _well known configuration endpoint_.
 
 The spec provides us with a schema for the expected response. At this point we are going to start dealing with _lots_ of json formatted data. To make this job easier, I'll be using [QuickType](https://app.quicktype.io/#l=cs&r=json2csharp), an awesome tool for scaffolding C# classes from json schemas, which comes with the added benefit of providing both neat type inference _and_ serialization helpers so that you can just 'plug and play' what it supplies.
 
@@ -135,7 +135,7 @@ Just when you thought we were out of the woods with this implementation, we come
 ...
 ```
 
-Although our scenario has us communicating directly with the Token Endpoint (and we should be using HTTPS), understanding how tokens and their signatures function is core to our understanding of how we should handle and utilize them in our solutions. If we skip this step, we have a glaring gap in our knowledge of the overall authentication solution. So, let's dive in!
+Although our scenario has us communicating directly with the Token Endpoint (and we _should_ be using HTTPS), understanding how tokens and their signatures function is core to our understanding of the security solution, as they are an integral part of it. If we skip this step, we have a glaring gap in our knowledge of the solution. So, let's dive in!
 
 🚨 **New Spec(s) Alert** 🚨 [The JWS specification](https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41) describes the mechanism used to ensure JWTs are made tamper-proof and validatable. The JWS specification relies on [the JWA specification](https://tools.ietf.org/html/rfc7518) to define what cryptographic mechanisms are available to generate signatures. The JWS specification is strongly linked to [the JWT specification](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32), which refers back to the JWS specification when describing [how to validate JWTs](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-7.2). 
 
@@ -163,7 +163,7 @@ If we jump across to [Section 9](https://tools.ietf.org/html/rfc7516#section-9) 
 
 Which algorithm is used to sign the token will depend on what our Client's registration with the Authorization Server. OpenID Connect specifies a default of `RS256`, which refers to the `RSASSA-PKCS1-v1_5 using SHA-256` algorithm. 
 
-`RS256` utilises a [Digital Signature](https://en.wikipedia.org/wiki/Message_authentication_code)-based approach, which involves using an asymmetric key pair (public/private keys) along with a strong hashing algorithm , composing the _JWS Signing Input_ out of the JWT contents, computing the hash over the input, encrypting the has using the private key from the key pair, and appending the hash to the JWT. If you really want to crack open another spec and dive into the guts of how this works, you can read [RSA Cryptography - 8.2. RSASSA-PKCS1-v1_5](https://tools.ietf.org/html/rfc3447#section-8.2).
+`RS256` utilises a [Digital Signature](https://en.wikipedia.org/wiki/Message_authentication_code)-based approach, which involves using an asymmetric key pair (public/private keys) along with a strong hashing algorithm, composing the _JWS Signing Input_ out of the JWT contents, computing the hash over the input, encrypting the has using the private key from the key pair, and appending the hash to the JWT. If you _really_ want to crack open another spec and dive into the guts of how this works, you can read [RSA Cryptography - 8.2. RSASSA-PKCS1-v1_5](https://tools.ietf.org/html/rfc3447#section-8.2).
 
 Note that this digital signature is more sophisticated than a simple [MAC](https://en.wikipedia.org/wiki/Message_authentication_code) based approach - the use of an asymmetric key pair makes stronger guarantees of a signatures authenticity, where the MAC approach simply relies on a single shared secret being available to all parties involved. 
 
@@ -187,10 +187,10 @@ Our signing algorithm `RS256` uses an asymmetric key-pair to do its job, and we 
 
 Piecing all of this together, what we need to accomplish is:
 
-1. Retrieve our RSA key in JWK format via the endpoint defined in our Authorization Server's _well known configuration_
+1. Retrieve our RSA public key components in JWK format via the endpoint defined in our Authorization Server's _well known configuration_
 2. Follow the [JWS specification - Section 5.2](https://tools.ietf.org/html/rfc7515#section-5.2) to construct the _JWS Signing Input_ in the format `ASCII(BASE64URL(UTF8(JWS Protected Header)) || '.' || BASE64URL(JWS Payload))`
 3. Compute the hash of the _JWS Signing Input_ with `SHA256`.
-4. Verify the computed hash against the signature we recieved in the third segment of our ID token 
+4. Verify the computed hash against the signature we recieved in the third segment of our ID token using our RSA public key
 5. Profit! If the verification passes, we can be comfortable that the token we have recieved could only have been constructed by our Authorization Server, and that it has not been tampered with in transit.
 
 ```C#
@@ -249,7 +249,7 @@ private static string DecodeSegment(string token, TokenSegments desiredSegment)
 
 And now, we understand ~~JW(T/S/E/K)~~ _tokens_.
 
-![So smart](/roll-your-own/homer-smart.gif)
+![Smart](/roll-your-own/homer-smart.gif)
 
 With signature verification out of the way, the last part of the ID token we need to verify is:
 
@@ -272,7 +272,7 @@ if (DateTimeOffset.FromUnixTimeSeconds(body.Exp) <= DateTimeOffset.UtcNow)
 ...
 ```
 
-The final specification for the Authorization Code Flow is:
+The final specified behaviour for the Authorization Code Flow is:
 
 ```
 3.1.3.8.  Access Token Validation
@@ -282,7 +282,7 @@ at_hash Claim, the Client MAY use it to validate the Access Token in the
  but using the ID Token and Access Token returned from the Token Endpoint.
 ```
 
-Although it isn't a _MUST_, anything regarding how we validate the payloads delivered by this solution will boost our understanding of it. If we go over to `3.2.2.9.  Access Token Validation` as directed, our instructions are to:
+Although it isn't a _MUST_, anything regarding how we validate the payloads delivered by this solution will boost our understanding of it. If we visit [3.2.2.9. Access Token Validation](https://openid.net/specs/openid-connect-core-1_0.html#ImplicitTokenValidation) as directed, our instructions are to:
 
 ```
 Hash the octets of the ASCII representation of the access_token...
@@ -291,7 +291,7 @@ The value of at_hash in the ID Token MUST match the value produced in
 the previous step.
 ```
 
-Did it just give a succinct and explicit explanation of how to implement one of its specifications? 
+Did it just give a succinct and explicit explanation of how to implement one of its behaviours? 
 
 ![Best friends](/roll-your-own/best-friends.gif)
 
@@ -319,6 +319,15 @@ And with that, we are **DONE**.
 Postface
 ===
 
-All of the code referenced in this article is [available on GitHub](https://github.com/andrewabest/openid-client) - I'd actually recommend cloning this and following along so you have a little more visibility as to how it all pieces together.
+All of the code referenced in this article is [available on GitHub](https://github.com/andrewabest/openid-client) - I'd actually recommend cloning this and following along so you have better visibility as to how it all pieces together.
 
-TODO: Wrap Up, lessons learned.
+My take-aways from this exercise have been:
+
+1. Security specifications stand on the shoulders of giants - the layers of specifications involved in these solutions can be quite astounding, and certainly gave me a deep appreciation of the work involved in crafting truly secure solutions.
+2. You really shouldn't roll your own. Really. Unless you are making your own product, there is just no way you would have time to digest all of the information required if you wanted to make a conformant solution.
+3. Specifications aren't that difficult to consume - until you get to the Crypto ones
+4. Having a go at implementing a specification _WILL_ give you a better understanding of it. It forces you to engage more deeply with it. That being said it also takes a fair bit of work!
+
+![Charlie](/roll-your-own/charlie.jpg)
+
+_Charlie attempts to link together the various JW* specifications_

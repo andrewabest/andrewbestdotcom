@@ -94,7 +94,7 @@ This is the very first step in our process. A user has arrived at our software w
 
 The spec says we can either use a GET or POST for the interaction, but if we GET, we need to ensure we [serialize our query parameters](https://openid.net/specs/openid-connect-core-1_0.html#QuerySerialization) on the query string. We will be using this approach, as it tends to be the 'standard' way of doing it. 
 
-There are a number of important points contained in the composition of the Authentication Request:
+There are a number of important points contained in the composition of the Authentication Request that I'll highlight here:
 
 1. The scope MUST contain `openid` - without this, we are not using OpenID Connect, and the behaviour of the Authorization Server is entirely unspecified
 2. The response_type MUST be `code` - this is how we tell the Authorization Server what flow we are initiating

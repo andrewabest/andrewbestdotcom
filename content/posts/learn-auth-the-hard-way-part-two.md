@@ -250,7 +250,7 @@ When we are digging through [3.1.3.3. Successful Token Response](https://openid.
     as specified in OAuth 2.0 Bearer Token Usage [RFC6750]
 ```
 
-**New Spec Alert** Does this mean we need to dig into ANOTHER spec in order to ensure our Client implementation is correct? 🙊🙉🙈
+🚨 **New Spec Alert** 🚨 Does this mean we need to dig into ANOTHER spec in order to ensure our Client implementation is correct? 🙊🙉🙈
 
 It turns out the answer is no. [RFC 6750](https://tools.ietf.org/html/rfc6750) was originally created to allow for multiple token usage types, with Bearer being the original, and one called "Proof of Possession" to follow. [But it never did](https://leastprivilege.com/2020/01/15/oauth-2-0-the-long-road-to-proof-of-possession-access-tokens/). It seems even published specifications aren't immune to _just-in-case engineering_.
 

@@ -71,7 +71,7 @@ following manner:
 ...
 ```
 
-**New Term Alert** What is Discovery? Once again, let's `Ctrl+f` our way to success. Way up in `1. Introduction` in the Open ID spec, the following information is offered:
+🚨 **New Term Alert** 🚨 What is Discovery? Once again, let's `Ctrl+f` our way to success. Way up in `1. Introduction` in the Open ID spec, the following information is offered:
 
 > This specification assumes that the Relying Party has already obtained configuration information about the OpenID Provider, including its Authorization Endpoint and Token Endpoint locations. This information is normally obtained via Discovery, as described in OpenID Connect Discovery 1.0.
 
@@ -137,7 +137,7 @@ Just when you thought we were out of the woods with this implementation, we come
 
 Although our scenario has us communicating directly with the Token Endpoint (and we should be using HTTPS), understanding how tokens and their signatures function is core to our understanding of how we should handle and utilize them in our solutions. If we skip this step, we have a glaring gap in our knowledge of the overall authentication solution. So, let's dive in!
 
-**New Spec(s) Alert** [The JWS specification](https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41) describes the mechanism used to ensure JWTs are made tamper-proof and validatable. The JWS specification relies on [the JWA specification](https://tools.ietf.org/html/rfc7518) to define what cryptographic mechanisms are available to generate signatures. The JWS specification is strongly linked to [the JWT specification](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32), which refers back to the JWS specification when describing [how to validate JWTs](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-7.2). 
+🚨 **New Spec(s) Alert** 🚨 [The JWS specification](https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41) describes the mechanism used to ensure JWTs are made tamper-proof and validatable. The JWS specification relies on [the JWA specification](https://tools.ietf.org/html/rfc7518) to define what cryptographic mechanisms are available to generate signatures. The JWS specification is strongly linked to [the JWT specification](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32), which refers back to the JWS specification when describing [how to validate JWTs](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-7.2). 
 
 ![Run away](/roll-your-own/homer.gif)
 

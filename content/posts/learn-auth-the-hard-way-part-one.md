@@ -96,9 +96,9 @@ The spec says we can either use a GET or POST for the interaction, but if we GET
 
 There are a number of important points contained in the composition of the Authentication Request that I'll highlight here:
 
-1. The scope MUST contain `openid` - without this, we are not using OpenID Connect, and the behaviour of the Authorization Server is entirely unspecified
-2. The response_type MUST be `code` - this is how we tell the Authorization Server what flow we are initiating
-3. We must supply a `client_id` and `redirect_uri` - this is how we identify our client to the Authorization Server, and ensure the server only sends our tokens back to us and not any random person requesting them
+1. The `scope` parameter MUST contain `openid` - without this, we are not using OpenID Connect, and the behaviour of the Authorization Server is entirely unspecified
+2. The `response_type` parameter MUST be `code` - this is how we tell the Authorization Server what flow we are initiating
+3. We must supply `client_id` and `redirect_uri` parameters - this is how we identify our client to the Authorization Server, and ensure the server only sends our tokens back to us and not any random system requesting them
 
 Composing the request looks like this:
 

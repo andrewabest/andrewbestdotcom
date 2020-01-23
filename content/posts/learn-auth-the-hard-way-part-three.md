@@ -317,6 +317,15 @@ private static TokenValidationResult ValidateAccessToken(string idToken, string 
 
 And with that, we are **DONE**.
 
+Disclaimer
+---
+
+What we have built here is NOT a production ready solution. 
+
+[OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/draft-ietf-oauth-security-topics-11) provides guidance beyond the original RFC 6479 and OpenID Connect specification that MUST be considered and implemented as appropriate in any production-ready solution.
+
+Auth0 have [written a great article](https://auth0.com/blog/oauth2-implicit-grant-and-spa/) from a client point of view on considerations that should be given when designing your client's security implementation.
+
 Postface
 ===
 
@@ -324,10 +333,10 @@ All of the code referenced in this article is [available on GitHub](https://gith
 
 My take-aways from this exercise have been:
 
-1. Security specifications stand on the shoulders of giants - the layers of specifications involved in these solutions can be quite astounding, and certainly gave me a deep appreciation of the work involved in crafting truly secure solutions.
-2. You shouldn't roll your own. Really. Unless you are making your own product, there is just no way you would have time to digest all of the information required if you wanted to make a conformant solution.
+1. Security specifications stand on the shoulders of giants - the layers of specification involved in these solutions is astounding
+2. You shouldn't roll your own. Really. There is just no way you would have time to digest all of the information required if you wanted to make a conformant solution.
 3. Specifications aren't that difficult to consume - until you get to the Crypto ones.
-4. Having a go at implementing a specification _WILL_ give you a better understanding of it. It forces you to engage deeply with it. That being said it also takes a fair bit of work!
+4. Having a go at implementing a specification (or part thereof) _WILL_ help embed your knowledge of it. It forces you to engage deeply with it.
 
 ![Charlie](/roll-your-own/charlie.jpg)
 

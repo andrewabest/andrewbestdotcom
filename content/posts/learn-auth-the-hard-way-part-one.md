@@ -29,7 +29,7 @@ I'm going to slightly pivot in terminology now, and talk about _authentication_ 
 
 Most modern authentication solutions you'll encounter are built on published standards. Whilst implementations provide their own specific abstractions on top of these standards - if you understand the _how_ and _why_ of the standard, you will have a solid understanding of how the solution will make _your solution_ secure.
 
-The standard to focus on for authentication is [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html), which supplements and enhances the existing [OAuth 2.0](https://tools.ietf.org/html/rfc6749) specification. 
+The standard to focus on for authentication is [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html), which supplements and enhances the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) specification. 
 
 These standards are unapproachable at first glance. They read like legal documents - huge tables of context, tonnes of defined terms, dry prose, and formatting straight out of the 1980s. However we musn't let that deter us - standards are key to us developing our knowledge of how modern authentication solutions work, which will allow us to be **accountable** when selecting a security solution for our own software.
 
@@ -56,14 +56,14 @@ What I want to implement is the [client](https://openid.net/specs/openid-connect
 
 More specifically, I've chosen to implement a client that will perform the [Authorization Code Flow](https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth). It is [one of the two flows](https://leastprivilege.com/2019/09/09/two-is-the-magic-number/) we need to know to cover most of our application authentication needs. We will mostly adhere to [the supplied guidance](https://openid.net/specs/openid-connect-core-1_0.html#RPMTI) on what parts of the specification we must implement, but deviate a little at times to ensure we have a well-rounded understanding of the components of the solution.
 
-I will use Dominick and Brock's fantastic [Identity Server 4](http://docs.identityserver.io/en/latest/) to fulfill the server component of the specifications. Identity Server 4 supports a variety of OAuth and OpenID Connect [specifications](http://docs.identityserver.io/en/latest/intro/specs.html) and is [OpenID certified](https://openid.net/certification/), so we can safely assume it will faithfully implement and represent the specifications. Plus it is open source, so if we need to dig into its code at any point to reason about its behaviour - we can!
+I will use Dominick and Brock's fantastic [Identity Server 4](http://docs.identityserver.io/en/latest/) to fulfill the server component of the specifications. Identity Server 4 supports a variety of [OAuth and OpenID Connect specifications](http://docs.identityserver.io/en/latest/intro/specs.html) and is [OpenID certified](https://openid.net/certification/), so we can safely assume it will faithfully implement and represent the specifications. Plus it is open source, so if we need to dig into its code at any point to reason about its behaviour - we can!
 
 Prerequisites
 ---
 
-I've created a sample that will get us up and running quickly with [Identity Server 4 in Docker](https://github.com/andrewabest/LocalDevIdentityServer) that I will be working against.
+I've created a sample app that will get us up and running quickly with [Identity Server 4 in Docker](https://github.com/andrewabest/LocalDevIdentityServer) as the server component of our solution.
 
-I'll be building my client as a bare-bones Asp.Net Core WebAPI project - but the code should largely be translatable to any other language and web framework you might want to use. 
+I'll be building my client as a bare-bones ASP.NET Core project - but the code should largely be translatable to any other language and web framework you might want to use. 
 
 Implementation
 ===
@@ -90,11 +90,17 @@ Here are the steps [taken from the specification](https://openid.net/specs/openi
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
 
-This is the very first step in our process. A user has arrived at our software without any evidence of being authenticated, and our software needs to prepare an Authentication Request to ask the Authorization Server nicely to authenticate them on our behalf. 
+This is the very first step in our process. A user has arrived at our software without any evidence of being authenticated, and our software needs to prepare an Authentication Request to ask the Authorization Server to authenticate them on our behalf. 
 
 The spec says we can either use a GET or POST for the interaction, but if we GET, we need to ensure we [serialize our query parameters](https://openid.net/specs/openid-connect-core-1_0.html#QuerySerialization) on the query string. We will be using this approach, as it tends to be the 'standard' way of doing it. 
 
-Most of this is fairly straight forward, and composing the request looks like this:
+There are a number of important points contained in the composition of the Authentication Request:
+
+1. The scope MUST contain `openid` - without this, we are not using OpenID Connect, and the behaviour of the Authorization Server is entirely unspecified
+2. The response_type MUST be `code` - this is how we tell the Authorization Server what flow we are initiating
+3. We must supply a `client_id` and `redirect_uri` - this is how we identify our client to the Authorization Server, and ensure the server only sends our tokens back to us and not any random person requesting them
+
+Composing the request looks like this:
 
 ```C#
 // 3.1.2.1.  Authentication Request

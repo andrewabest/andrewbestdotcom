@@ -141,7 +141,7 @@ This doesn't really tell us much about how we should go about implementing the C
 
 This happens continuously throughout the OpenID Connect specification. Since it sits on top of OAuth 2.0 (RFC 6749), it does not redefine it, but references it at appropriate times. This makes sense, but leads to us needing to jump between the specs to build a complete picture.
 
-If we follow the rabbit hole over to RFC 6749 10.12, we arrive at
+If we follow the rabbit hole over to [RFC 6749 10.12](https://tools.ietf.org/html/rfc6749#section-10.12), we arrive at
 
 ```
 10.12. Cross-Site Request Forgery
@@ -160,7 +160,7 @@ If we follow the rabbit hole over to RFC 6749 10.12, we arrive at
     non-guessable value (as described in Section 10.10)
 ```
 
-Quick! Over to 10.10!
+Quick! Over to [10.10](https://tools.ietf.org/html/rfc6749#section-10.10)!
 
 ```
 10.10. Credentials-Guessing Attacks

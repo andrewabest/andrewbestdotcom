@@ -255,7 +255,7 @@ With signature verification out of the way, the last part of the ID token we nee
 
 ```
 3.1.3.7.  ID Token Validation
-
+...
     9. The current time MUST be before the time represented by the exp 
     Claim.
 ```
@@ -276,10 +276,11 @@ The final specified behaviour for the Authorization Code Flow is:
 
 ```
 3.1.3.8.  Access Token Validation
-When using the Authorization Code Flow, if the ID Token contains an 
-at_hash Claim, the Client MAY use it to validate the Access Token in the
- same manner as for the Implicit Flow, as defined in Section 3.2.2.9, 
- but using the ID Token and Access Token returned from the Token Endpoint.
+    When using the Authorization Code Flow, if the ID Token contains an 
+    at_hash Claim, the Client MAY use it to validate the Access Token in
+    the same manner as for the Implicit Flow, as defined in Section
+    3.2.2.9, but using the ID Token and Access Token returned from the 
+    Token Endpoint.
 ```
 
 Although it isn't a _MUST_, anything regarding how we validate the payloads delivered by this solution will boost our understanding of it. If we visit [3.2.2.9. Access Token Validation](https://openid.net/specs/openid-connect-core-1_0.html#ImplicitTokenValidation) as directed, our instructions are to:
@@ -324,9 +325,9 @@ All of the code referenced in this article is [available on GitHub](https://gith
 My take-aways from this exercise have been:
 
 1. Security specifications stand on the shoulders of giants - the layers of specifications involved in these solutions can be quite astounding, and certainly gave me a deep appreciation of the work involved in crafting truly secure solutions.
-2. You really shouldn't roll your own. Really. Unless you are making your own product, there is just no way you would have time to digest all of the information required if you wanted to make a conformant solution.
-3. Specifications aren't that difficult to consume - until you get to the Crypto ones
-4. Having a go at implementing a specification _WILL_ give you a better understanding of it. It forces you to engage more deeply with it. That being said it also takes a fair bit of work!
+2. You shouldn't roll your own. Really. Unless you are making your own product, there is just no way you would have time to digest all of the information required if you wanted to make a conformant solution.
+3. Specifications aren't that difficult to consume - until you get to the Crypto ones.
+4. Having a go at implementing a specification _WILL_ give you a better understanding of it. It forces you to engage deeply with it. That being said it also takes a fair bit of work!
 
 ![Charlie](/roll-your-own/charlie.jpg)
 

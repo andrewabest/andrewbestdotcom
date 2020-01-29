@@ -1,16 +1,16 @@
 ---
 title: "Learn Authentication The Hard Way: Part Two"
-date: 2020-01-01T06:00:00+10:00
-draft: true
+date: 2020-02-07T05:00:00+10:30
+draft: false
 ---
 
-This is the second part of a three part series in which we dive into modern application authentication solutions.
+This is the second part of a three part series in which we dive into modern application authentication solutions - the hard way.
 
 [Part One: The Hard Way](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one)
 
 [Part Two: The Hard Way, Continued](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two)
 
-[Part Three: The Hard Way: Return Of The Specification](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-three)
+_Part Three: The Hard Way: Return Of The Specification - TBA_
 
 The Hard Way, Continued
 ===
@@ -45,6 +45,8 @@ In [Part One](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequestValidation)
 
+![Authorization Server Authenticates the End-User and obtains End-User Consent/Authorization](/roll-your-own/auth-code-flow-3-4.png)
+
 These responsibilities are taken care of by Identity Server 4 for us, and cover `3.1.2.2.  Authentication Request Validation` - `3.1.2.4.  Authorization Server Obtains End-User Consent/Authorization` in the Open ID Connect specification.
 
 We won't dig into these specifications in this post, but it is worth reading them, as these are the things you'll expect your authentication solution to enforce, and lets you reason about its configuration and expected behaviour.
@@ -52,6 +54,8 @@ We won't dig into these specifications in this post, but it is worth reading the
 **5. Authorization Server sends the End-User back to the Client with an Authorization Code**
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#AuthResponse)
+
+![Authorization Server sends the End-User back to the Client with an Authorization Code](/roll-your-own/auth-code-flow-5.png)
 
 Once we have successfully authenticated with our Authentication Server, it is going to want to send us our Authorization Code - we will exchange this later for identity and access tokens, and optionally a refresh token too.
 
@@ -141,6 +145,8 @@ public async Task<IActionResult> Authorize([FromQuery] AuthenticationResponse re
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#TokenEndpoint)
 
+![Client requests a response using the Authorization Code at the Token Endpoint](/roll-your-own/auth-code-flow-6.png)
+
 We have now recieved our Authorization Code, and verified the authenticity of our CSRF protection measure. We want to exchange the code for an Access Token, and ID Token. To do this, we need to construct a valid Access Token Request 
 
 ```
@@ -218,6 +224,8 @@ var result = await client.PostAsync(tokenEndpoint,
 **7. Client receives a response that contains an ID Token and Access Token in the response body**
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#TokenResponse)
+
+![Client receives a response that contains an ID Token and Access Token in the response body](/roll-your-own/auth-code-flow-7.png)
 
 Before this step, the Authorization Server would have performed `3.1.3.2.  Token Request Validation` and ensured our request to it was well formed and secure.
 

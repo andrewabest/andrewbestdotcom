@@ -1,16 +1,16 @@
 ---
 title: "Learn Authentication The Hard Way: Part One"
-date: 2020-01-01T06:00:00+10:00
-draft: true
+date: 2020-01-31T05:00:00+10:30
+draft: false
 ---
 
-This is the first part of a three part series in which we dive into modern application authentication solutions.
+This is the first part of a three part series in which we dive into modern application authentication solutions - the hard way.
 
 [Part One: The Hard Way](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one)
 
-[Part Two: The Hard Way, Continued](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two)
+_Part Two: The Hard Way, Continued - TBA_
 
-[Part Three: The Hard Way: Return Of The Specification](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-three)
+_Part Three: The Hard Way: Return Of The Specification - TBA_
 
 Introduction
 ===
@@ -46,6 +46,15 @@ Once you are comfortable with the high level concepts, there is no avoiding it -
 
 ![Restyled ietf RFC document](/roll-your-own/rfcrestyle.png)
 😘👌
+
+What It Isn't
+===
+
+This series is not about teaching OpenID Connect / OAuth 2.0 fundamentals. There are a proliferation of great resources on the internet for doing this, like [this one from Okta](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc), which happens to reference a number of other fantastic articles on the topic at the end.
+
+This series is not about quantifying _why_ the specifications specify what they do - we arne't going to dig into why each MUST is a MUST, why some things are OPTIONAL, etc.
+
+This series IS about rolling up our sleeves and getting stuck into the specifications that sit behind modern authentication solutions, developing a comfort in traversing them, and an appreciation for how they can be used to build our knowledge of solutions that implement them.
 
 The Hard Way
 ===
@@ -89,6 +98,8 @@ Here are the steps [taken from the specification](https://openid.net/specs/openi
 **1. Client prepares an Authentication Request containing the desired request parameters**
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
+
+![Client prepares an Authentication Request containing the desired request parameters](/roll-your-own/auth-code-flow-1.png)
 
 This is the very first step in our process. A user has arrived at our software without any evidence of being authenticated, and our software needs to prepare an Authentication Request to ask the Authorization Server to authenticate them on our behalf. 
 
@@ -232,6 +243,8 @@ I'm going to skip the `OPTIONAL` parameters for the sake of this exercise.
 **2. Client sends the request to the Authorization Server**
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)
+
+![Client sends the request to the Authorization Server](/roll-your-own/auth-code-flow-2.png)
 
 Now it is time to move on to _sending_ the request we spent so much time crafting. 
 

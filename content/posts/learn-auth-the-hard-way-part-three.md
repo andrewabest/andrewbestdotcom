@@ -1,10 +1,10 @@
 ---
 title: "Learn Authentication The Hard Way: Part Three"
-date: 2020-01-01T06:00:00+10:00
-draft: true
+date: 2020-02-14T05:00:00+10:30
+draft: false
 ---
 
-This is the final instalment of a three part series in which we dive into modern application authentication solutions.
+This is the final instalment of a three part series in which we dive into modern application authentication solutions - the hard way.
 
 [Part One: The Hard Way](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one)
 
@@ -42,6 +42,8 @@ In [Part Two](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two
 **8. Client validates the ID token and retrieves the End-User's Subject Identifier**
 
 [Specification Link](https://openid.net/specs/openid-connect-core-1_0.html#TokenResponseValidation)
+
+![Client validates the ID token and retrieves the End-User's Subject Identifier](/roll-your-own/auth-code-flow-8.png)
 
 We are now on the home stretch - all we need to do is to validate the payload we have received, and then we will have successfully completed the Authorization Code Flow!
 

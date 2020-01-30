@@ -324,9 +324,11 @@ Disclaimer
 
 What we have built here is NOT a production ready solution. 
 
-[OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/draft-ietf-oauth-security-topics-11) provides guidance beyond the original RFC 6479 and OpenID Connect specification that MUST be considered and implemented as appropriate in any production-ready solution.
+[OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/draft-ietf-oauth-security-topics-13) provides guidance beyond the original RFC 6479 and OpenID Connect specification that MUST be considered and implemented as appropriate in any production-ready solution.
 
 Auth0 have [written a great article](https://auth0.com/blog/oauth2-implicit-grant-and-spa/) from a client point of view on considerations that should be given when designing your client's security implementation.
+
+Looking to the future, Aaron Parecki has written a fantastic post foreshadowing [OAuth 2.1](https://aaronparecki.com/2019/12/12/21/its-time-for-oauth-2-dot-1) and how it may simplify the web of entangled, aging RFC documents we are currently faced with when making decisions about how best to implement or adopt modern authentication solutions.
 
 Postface
 ===

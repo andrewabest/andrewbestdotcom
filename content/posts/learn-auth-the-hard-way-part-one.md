@@ -36,7 +36,7 @@ These standards are unapproachable at first glance. They read like legal documen
 Seek First To Understand
 ===
 
-If you aren't yet comfortable with the high level concepts involved in modern application authentication, I highly recommend a presentation my good friend [Rob Moore](https://robdmoore.id.au/) gave at NDC Sydney which provides a top-notch set of metaphors that make the different roles that play a part in the solution easier to grasp. 
+If you aren't yet comfortable with the high level concepts involved in modern application authentication, I highly recommend a presentation my good friends [Rob Moore](https://robdmoore.id.au/) and [Matt Davies](https://twitter.com/mdaviesnet) gave at NDC Sydney which provides a top-notch set of metaphors that make the different roles that play a part in the solution easier to grasp. 
 
 {{< youtube X6a9bjNutEw >}}
 

@@ -1,6 +1,6 @@
 ---
 title: "Speaking"
-date: 2018-07-08T15:01:15+10:00
+date: 2020-01-01T15:01:15+10:00
 menu: "main"
 draft: false
 ---
@@ -9,7 +9,7 @@ I've always enjoyed sharing hard-earned knowledge with the community. I've alway
 
 # Upcoming
 
-TBA!
+<script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/f846ad20-530a-4e34-8ef8-476fa83c59c4/0x0x5949f6x"></script>
 
 # Previous
 

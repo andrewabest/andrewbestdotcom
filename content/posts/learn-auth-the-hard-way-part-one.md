@@ -52,7 +52,7 @@ What It Isn't
 
 This series is not about teaching OpenID Connect / OAuth 2.0 fundamentals. There are a proliferation of great resources on the internet for doing this, like [this one from Okta](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc), which happens to reference a number of other fantastic articles on the topic at the end.
 
-This series is not about quantifying _why_ the specifications specify what they do - we arne't going to dig into why each MUST is a MUST, why some things are OPTIONAL, etc.
+This series is not about quantifying _why_ the specifications specify what they do - we aren't going to dig into why each MUST is a MUST, why some things are OPTIONAL, etc.
 
 This series IS about rolling up our sleeves and getting stuck into the specifications that sit behind modern authentication solutions, developing a comfort in traversing them, and an appreciation for how they can be used to build our knowledge of solutions that implement them.
 

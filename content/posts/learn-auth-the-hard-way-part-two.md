@@ -37,7 +37,7 @@ Here are the steps [taken from the specification](https://openid.net/specs/openi
    Identifier.
 ```
 
-In [Part One](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one) we managed to implement the two steps after falling down a _spec rabbit-hole_. In this post we will continue from the third step.
+In [Part One](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one) we managed to implement the first two steps after falling down a _spec rabbit-hole_. In this post we will continue from the third step.
 
 **3. Authorization Server Authenticates the End-User**
 

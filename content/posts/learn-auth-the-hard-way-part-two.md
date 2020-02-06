@@ -1,6 +1,6 @@
 ---
 title: "Learn Authentication The Hard Way: Part Two"
-date: 2020-02-07T05:00:00+10:30
+date: 2020-02-06T05:00:00+10:30
 draft: false
 ---
 

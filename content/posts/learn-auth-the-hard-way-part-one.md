@@ -8,7 +8,7 @@ This is the first part of a three part series in which we dive into modern appli
 
 [Part One: The Hard Way](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-one)
 
-_Part Two: The Hard Way, Continued - TBA_
+[Part Two: The Hard Way, Continued](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two)
 
 _Part Three: The Hard Way: Return Of The Specification - TBA_
 
@@ -283,4 +283,4 @@ public IActionResult Login()
 
 The key learning here is from this line: _This URI MUST exactly match one of the Redirection URI values for the Client pre-registered at the OpenID Provider_. This ensures our Authentication Server will only return tokens to a known endpoint configured within it, preventing a range of attacks that could occur otherwise.
 
-Stay tuned for the next installment, in which we will delve into retrieving our Authorization Code, and exchanging that for TOKENS!
+Stay tuned for the [next installment](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two), in which we will delve into retrieving our Authorization Code, and exchanging that for TOKENS!

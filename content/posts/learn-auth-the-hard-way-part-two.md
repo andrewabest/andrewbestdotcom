@@ -57,7 +57,7 @@ We won't dig into these specifications in this post, but it is worth reading the
 
 ![Authorization Server sends the End-User back to the Client with an Authorization Code](/roll-your-own/auth-code-flow-5.png)
 
-Once we have successfully authenticated with our Authentication Server, it is going to want to send us our Authorization Code - we will exchange this later for identity and access tokens, and optionally a refresh token too.
+Once we have successfully authenticated with our Authentication Server, it is going to want to send us our Authorization Code - we will exchange this later for identity and access tokens, and optionally a refresh token too. We will start at the OpenID Connect specification
 
 ```
 3.1.2.5.  Successful Authentication Response
@@ -81,7 +81,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 ...
 ```
 
-[RFC 6749 4.1.2](https://tools.ietf.org/html/rfc6749#section-4.1.2) and [4.1.2.1](https://tools.ietf.org/html/rfc6749#section-4.1.2.1), along with the OpenID Connect Specification [3.1.2.6](https://openid.net/specs/openid-connect-core-1_0.html#AuthError) define the complete response schema, which can be deserialised into the following model
+[RFC 6749 4.1.2](https://tools.ietf.org/html/rfc6749#section-4.1.2) and [4.1.2.1](https://tools.ietf.org/html/rfc6749#section-4.1.2.1), along with the OpenID Connect specification [3.1.2.6](https://openid.net/specs/openid-connect-core-1_0.html#AuthError) define the complete response schema, which can be deserialised into the following model
 
 ```C#
 public class AuthenticationResponse

@@ -16,7 +16,6 @@
     width: auto;
 
     .has-sidebar & {
-      float: left;
       margin-left: $sidebar__width;
       padding-left: 2em;
     }

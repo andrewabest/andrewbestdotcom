@@ -1,3 +1,30 @@
+<script type="text/javascript">
+
+function resize(event) {
+  var top = document.body.scrollTop + document.documentElement.scrollTop == 0;
+  document.getElementById('sidebar').style.display = top ? 'block' : 'none';
+  document.getElementById('content').parentElement.style.marginLeft = top ? '300px' : '0px';
+}
+
+function resizeOnScroll() {
+  if (window.location.pathname.includes("posts")) {
+      if (window.innerWidth >= 920) {
+      resize();
+      window.addEventListener("scroll", resize);
+    } 
+    else {
+      document.getElementById('content').parentElement.style.marginLeft = '0px';
+      window.removeEventListener("scroll", resize);
+    }
+  }
+}
+
+window.addEventListener('resize', resizeOnScroll);
+
+resizeOnScroll();
+
+</script>
+
 <div class='container entry-content'>
   {{ .Content }}
 </div>

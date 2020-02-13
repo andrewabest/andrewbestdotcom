@@ -84,6 +84,9 @@ youtube = ""
 [params.comments]
 enable = false
 
+[params.cover]
+image = "https://www.andrew-best.com/images/logo.png"
+
 [params.comments.staticman]
 enable = false
 apiEndpoint = "https://api.staticman.net/v2/entry"

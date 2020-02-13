@@ -140,3 +140,12 @@ weight = 1
     name = "home"
     url = "/"
     weight = -130
+
+[outputs]
+home = [ "RSS", "HTML"]
+section  = ["HTML"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"

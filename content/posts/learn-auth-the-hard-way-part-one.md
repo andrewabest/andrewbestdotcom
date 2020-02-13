@@ -10,7 +10,7 @@ This is the first part of a three part series in which we dive into modern appli
 
 [Part Two: The Hard Way, Continued](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two)
 
-_Part Three: The Hard Way: Return Of The Specification - TBA_
+[Part Three: The Hard Way: Return Of The Specification](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-three)
 
 Introduction
 ===

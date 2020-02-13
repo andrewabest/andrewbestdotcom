@@ -10,7 +10,7 @@ This is the second part of a three part series in which we dive into modern appl
 
 [Part Two: The Hard Way, Continued](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-two)
 
-_Part Three: The Hard Way: Return Of The Specification - TBA_
+[Part Three: The Hard Way: Return Of The Specification](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-three)
 
 The Hard Way, Continued
 ===
@@ -262,4 +262,4 @@ When we are digging through [3.1.3.3. Successful Token Response](https://openid.
 
 It turns out the answer is no. [RFC 6750](https://tools.ietf.org/html/rfc6750) was originally created to allow for multiple token usage types, with Bearer being the original, and one called "Proof of Possession" to follow. [But it never did](https://leastprivilege.com/2020/01/15/oauth-2-0-the-long-road-to-proof-of-possession-access-tokens/). It seems even published specifications aren't immune to _just-in-case engineering_.
 
-Stay tuned for the final installment, in which we will be shocked to learn how many JW* specifications there are, delve into how crypto is used to make tokens secure, and round out the implementation of our OpenID Connect client!
+Stay tuned for the [final installment](https://www.andrew-best.com/posts/learn-auth-the-hard-way-part-three), in which we will be shocked to learn how many JW* specifications there are, delve into how crypto is used to make tokens secure, and round out the implementation of our OpenID Connect client!

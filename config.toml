@@ -86,6 +86,7 @@ enable = false
 
 [params.cover]
 image = "https://www.andrew-best.com/images/logo.png"
+alt = "Andrew Best"
 
 [params.comments.staticman]
 enable = false

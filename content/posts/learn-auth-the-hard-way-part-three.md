@@ -139,13 +139,13 @@ Just when you thought we were out of the woods with this implementation, we come
 
 Although our scenario has us communicating directly with the Token Endpoint (and we _should_ be using HTTPS), understanding how tokens and their signatures function is core to our understanding of the security solution, as they are an integral part of it. If we skip this step, we have a glaring gap in our knowledge of the solution. So, let's dive in!
 
-🚨 **New Spec(s) Alert** 🚨 [The JWS specification](https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41) describes the mechanism used to ensure JWTs are made tamper-proof and validatable. The JWS specification relies on [the JWA specification](https://tools.ietf.org/html/rfc7518) to define what cryptographic mechanisms are available to generate signatures. The JWS specification is strongly linked to [the JWT specification](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32), which refers back to the JWS specification when describing [how to validate JWTs](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-7.2). 
+🚨 **New Spec(s) Alert** 🚨 [The JWS specification](https://tools.ietf.org/html/rfc7515) describes the mechanism used to ensure JWTs are made tamper-proof and validatable. The JWS specification relies on [the JWA specification](https://tools.ietf.org/html/rfc7518) to define what cryptographic mechanisms are available to generate signatures. The JWS specification is strongly linked to [the JWT specification](https://tools.ietf.org/html/rfc7519), which refers back to the JWS specification when describing [how to validate JWTs](https://tools.ietf.org/html/rfc7519#section-7.2). 
 
 ![Run away](/roll-your-own/homer.gif)
 
 Come back! We aren't going to have to read three new specs end-to-end, although this is the danger of diving into specifications - sometimes you don't know where the rabbit holes will end. In our case we are only concerned with validating the signature on our ID Token, so let's try and limit our exploration of the token specifications to this topic.
 
-Starting with [7.2. Validating a JWT](https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32#section-7.2), there are some basic formatting and encoding checks to perform, but the interesting part starts with:
+Starting with [7.2. Validating a JWT](https://tools.ietf.org/html/rfc7519#section-7.2), there are some basic formatting and encoding checks to perform, but the interesting part starts with:
 
 ```
    6.   Determine whether the JWT is a JWS or a JWE using any of the
@@ -169,7 +169,7 @@ Which algorithm is used to sign the token will depend on what our Client's regis
 
 Note that this digital signature is more sophisticated than a simple [MAC](https://en.wikipedia.org/wiki/Message_authentication_code) based approach - the use of an asymmetric key pair makes stronger guarantees of a signatures authenticity, where the MAC approach simply relies on a single shared secret being available to all parties involved. 
 
-The [JWS specification - 5.2. Message Signature or MAC Validation](https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41#section-5) tells us what we need to do to validate our JWS token:
+The [JWS specification - 5.2. Message Signature or MAC Validation](https://tools.ietf.org/html/rfc7515#section-5.2) tells us what we need to do to validate our JWS token:
 
 ```
 Validate the JWS Signature against the JWS Signing Input

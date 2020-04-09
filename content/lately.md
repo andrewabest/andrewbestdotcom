@@ -10,12 +10,13 @@ I'm currently living in [Adelaide, Australia](https://time.is/Adelaide).
 
 # What am I doing now?
 
-* Building a product in Azure, and [Learning some things](https://www.andrew-best.com/posts/please-sir-can-i-have-some-auth/) along the way.
-* Growing the newly-minted Telstra Purple Adelaide team - if you are an awesome developer, data-er, or designer - [drop me an email](mailto:andrew.best@readify.net)! 
+* Ramping up at [Octopus Deploy](https://www.octopus.com)! I've had a desire to work with a product organization for a while now, and Octopus is a perfect fit for me. 
 * Scheming on what might be for [DDD Adelaide](https://dddadelaide.com/) 2020. 2019 was AMAZING and an outright success, and I want 2020 to be bigger and better.
 
 ## Previously
 
+* Building a product in Azure, and [Learning some things](https://www.andrew-best.com/posts/please-sir-can-i-have-some-auth/) along the way.
+* Growing the newly-minted Telstra Purple Adelaide team - if you are an awesome developer, data-er, or designer - [drop me an email](mailto:andrew.best@readify.net)! 
 * Organizing a conference! I'm busily co-founding [DDD Adelaide](https://dddadelaide.com/). It will be awesome. I can't wait for conference day!
 * Building the foundational Readify Adelaide team - if you are an awesome developer, data-er, or designer - [drop me an email](mailto:andrew.best@readify.net)! 
 * Re-establishing my roots in the Adelaide tech community. Need a [speaker](https://www.andrew-best.com/speaking/) for an event? Want to talk about [solving problems](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) that you and your team are currently tackling? Need someone to help represent technology within your business? I'm more than happy to buy the coffees ☕☕

@@ -94,6 +94,7 @@ Firstly I'd like to thank Rachael for inviting me to co-create a pair of posts o
 
 I thought a summary might be in order to distill the above, so without further ado:
 
+- Mentoring is one on one - being a leader isn't being a mentor
 - You don't have to supply _all the things_ required for your mentee's learning - they bring the options and problems, you provide your best thinking to help evaluate and solve them
 - Make sure you always have concrete problems to discuss at regular intervals
 - Discover how your mentee learns best, and work hard to break your knowledge down and package it in that format

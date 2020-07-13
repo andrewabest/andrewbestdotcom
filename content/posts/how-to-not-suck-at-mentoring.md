@@ -16,7 +16,7 @@ This might sound like mentoring to some. I provide my opinions and experience to
 
 It isn't though.
 
-Back in 2017 I was working as a Principal Consultant at Readify. One of the best things about Readify was that _everyone_ believed in what we did, and was really into technology. Even outside of consulting - sales people, people people, administrative people - lots of people either used tech day to day outside of consulting (shout out to Lucy\* and her data-driven office administration), or had an aspiration to grow in their understanding and capability to wield technology.
+Back in 2017 I was working as a Principal Consultant at Readify. One of the best things about Readify was that _everyone_ believed in what we did, and was really into technology. Even outside of consulting - sales people, people people, administrative people - lots of people either used tech day to day outside of consulting (shout out to Lucy and her data-driven office administration), or had an aspiration to grow in their understanding and capability to wield technology.
 
 One of the people with aspirations of being able to bend computers to her will was Rachael Goodenough - better known as Goodo.
 

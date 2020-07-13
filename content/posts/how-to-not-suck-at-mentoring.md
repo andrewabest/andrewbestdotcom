@@ -1,12 +1,12 @@
 ---
 title: "How To Not Suck At Mentoring"
 date: 2020-07-12T20:00:00+10:00
-draft: true
+draft: false
 ---
 
 This post is one of a collaborative pair of posts produced by my good friend and Ruby afficionado [Rachael Goodenough](https://twitter.com/RacheGoodo) and myself.
 
-Please make sure to read [Rachael's Post]() before mine to get the full story 😀
+Please make sure to read [Rachael's Post](https://medium.com/@rachaelgoodenough/how-to-be-a-great-mentee-a01b0c82a5f2) before mine to get the full story 😀
 
 # Introduction
 
@@ -90,4 +90,14 @@ Wherever your passion lies, ensuring you look for opportunities to mentor in tha
 
 ## Postface
 
-TODO
+Firstly I'd like to thank Rachael for inviting me to co-create a pair of posts on our mentor/mentee experience - it was a great experience to reflect on 🙌.
+
+I thought a summary might be in order to distill the above, so without further ado:
+
+- You don't have to supply _all the things_ required for your mentee's learning - they bring the options and problems, you provide your best thinking to help evaluate and solve them
+- Make sure you always have concrete problems to discuss at regular intervals
+- Discover how your mentee learns best, and work hard to break your knowledge down and package it in that format
+- Let them dictate how they play the game
+- Be honest about what you get out of it and only commit if it is win/win
+
+Once again, make sure to read [Rachael's Post](https://medium.com/@rachaelgoodenough/how-to-be-a-great-mentee-a01b0c82a5f2) to get the mentees view of what matters in mentoring.

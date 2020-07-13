@@ -100,4 +100,4 @@ I thought a summary might be in order to distill the above, so without further a
 - Let them dictate how they play the game
 - Be honest about what you get out of it and only commit if it is win/win
 
-Once again, make sure to read [Rachael's Post](https://medium.com/@rachaelgoodenough/how-to-be-a-great-mentee-a01b0c82a5f2) to get the mentees view of what matters in mentoring.
+If you are looking for a mentor and want some advice from the other side of the equation, make sure to read [Rachael's Companion Post](https://medium.com/@rachaelgoodenough/how-to-be-a-great-mentee-a01b0c82a5f2) to this one.

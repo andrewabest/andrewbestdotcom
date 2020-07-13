@@ -6,7 +6,7 @@ draft: true
 
 This post is one of a collaborative pair of posts produced by my good friend and Ruby afficionado [Rachael Goodenough](https://twitter.com/RacheGoodo) and myself.
 
-Please make sure to read [Racheal's Post]() before mine to get the full story 😀
+Please make sure to read [Rachael's Post]() before mine to get the full story 😀
 
 # Introduction
 
@@ -22,9 +22,9 @@ One of the people with aspirations of being able to bend computers to her will w
 
 In classic Goodo fashion, without any semblance fear and with great enthusiasm, Rache had booked herself in to go and attend Rails Camp. Before really knowing much about Rails. Or Ruby.
 
-Goodo relayed this fact to me, and her growing trepidation about the upcoming experience. She felt she needed to at least begin understanding the basics of how to code to legitimise her attendance (not that this would be a problem, Rails Camp is an amazingly welcoming place!).
+Goodo relayed this fact to me, and her growing trepidation about the upcoming experience. She felt she needed to at least begin understanding the basics of how to code to legitimise her attendance - not that this would be a problem, Rails Camp is an amazingly welcoming place!
 
-Emboldened by my equal lack of knowledge of Rails or Ruby, I offered to mentor her in the fine art of developing software with it.
+Emboldened by my equal lack of knowledge of Rails or Ruby, I offered to mentor her in the fine art of developing software with them.
 
 ## Where To Begin When You Are Beginning
 
@@ -34,7 +34,7 @@ I was worried I would not be able to give the best advice in this area. I had so
 
 To begin to learn something new, you need subject matter - books, videos, courseware, projects - whatever can be used as a vehicle for your learning.
 
-Probably my biggest misconception about mentoring was that I would need to be some sort of provider of all of these things - direction, material, insight, answers.
+My biggest misconception about mentoring was that I would need to be some sort of provider of all of these things - direction, material, insight, answers.
 
 You don't.
 
@@ -54,13 +54,13 @@ It is _really hard_ to give advice about oblique things - without concrete topic
 
 I've participated in 'mentoring' relationships previously that exibited this trait - where each catchup was a slightly vague discussion about what the mentee had accomplished in their given area of growth over the past couple of weeks, and what could possibly have improved or be done differently.
 
-This was in stark contrast to those types of conversations - each time we had a handful of concrete problems to solve, and I left each meeting feeling I had really contributed to my mentee's growth as they now understood what they previously had not.
+My experience this time was a real eye-opener - each time we would go into a mentoring catchup, we had a handful of concrete problems to solve, and I left each meeting feeling I had really contributed to my mentee's growth, allowing them to understand what they previously had not.
 
 ## Metaphorically Speaking
 
 It is easy to forget the depths knowledge we have accumulated over tertiary education and years upon years of professional experience. Many thousands of small pieces accumulate, and we no longer think about them directly - we use this knowledge as a basis to reason about higher-level, more complex problems.
 
-Communications are most effective when we tailor our approach and content to our audience. If your audience happens to be a beginner or junior developer that you are mentoring, you need to work pretty hard on not assuming anything about their prior knowledge.
+Communication is most effective when we tailor our approach and content to our audience. If your audience happens to be a beginner or junior developer that you are mentoring, you need to work pretty hard on not assuming anything about their prior knowledge.
 
 This became very clear to me when explaining concepts like variables, functions, objects, and methods.
 
@@ -76,7 +76,7 @@ There were times that Rache was flying through course content, and we would stru
 
 In either of these situations it is important as a mentor to do your best to support wherever your mentee is at. This may mean you need to race along with them, and invest time in making sure you can contribute to their accelerated learning and don't leave them blocked on important problems (I certainly had to learn some Ruby between our catch-ups!). It may also mean you need to assure them that not focussing on the goal for a week or so wasn't going undo progress to date - it is a marathon, not a sprint.
 
-By allowing your mentee to dictate how they work towards their goals, you are doing the best possible thing for their intrinsic motivation. (Side note: if you have not read Drive by Dan Pink, I highly recommend it)
+By allowing your mentee to dictate how they work towards their goals, you are doing the best possible thing for their intrinsic motivation. Side note: if you have not read Drive by Dan Pink, I highly recommend it!
 
 ## Think Win/Win
 

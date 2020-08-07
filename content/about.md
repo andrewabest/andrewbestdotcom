@@ -9,7 +9,6 @@ I am an experienced **leader**, **consultant**, **architect**, and **developer**
 
 With broad and deep knowledge in digital strategy, agile delivery, team leadership, devops, and software engineering, I am in my element when working with businesses from the executive level to the developer level to deliver high quality, innovative, and impactful software solutions. I am a strong believer in continuous improvement, and constantly drive gradual, sustainable positive change in teams and organizations.
 
-I've recently joined [Octopus Deploy](https://www.octopus.com) as a Solution Architect and Team Lead, and am looking forward to contributing to the growth and success of an already amazing product and company!
-
+I've recently joined [Octopus Deploy](https://www.octopus.com) as a Lead Software Engineer, and am looking forward to contributing to the growth and success of an already amazing product and company!
 
 Need a [speaker](https://www.andrew-best.com/speaking/) for an event? Want to talk about [solving problems](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) that you and your team are currently tackling? Need someone to help represent technology within your business? I'm more than happy to buy the coffees ☕☕

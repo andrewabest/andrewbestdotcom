@@ -10,7 +10,7 @@ However, if you are faced with a not-so-standard scenario, it can get a bit hair
 
 I was working on some software recently that is migrating to ASP.NET Core. It uses the new hosting infrastructure ASP.NET Core provides, and middleware, and at the end of the request pipeline either routes to new ASP.NET Core controllers, or if no routes match, lets legacy handlers have their turn at the request.
 
-In this software, authentication is handled by custom middleware. It provides a number of non-standard authentication options, so ASP.NET's standard `UseAuthentication` and associated configuration wasn't goign to cut it, along with the fact that the legacy handlers relied on the context set up by the custom middleware.
+In this software, authentication is handled by custom middleware. It provides a number of non-standard authentication options, so ASP.NET's standard `UseAuthentication` and associated configuration wasn't going to cut it, along with the fact that the legacy handlers relied on the context set up by the custom middleware.
 
 > Authentication in ASP.NET generally has one job: work with the user to socilict and validate credentials, and upon successful completion of this process establish a `Principal` that the rest of the application can work with through the lifecycle of a request, made available through `HttpContext.User`. This particular concept isn't new to ASP.NET Core - ASP.NET (and other .NET based frameworks) have done it or similar things for a very long time
 
@@ -29,7 +29,7 @@ webHostBuilder.Configure(app =>
 }
 ```
 
-I'd expect this to apply the default authorization policy, which \*\* simply enforces that the incoming request's User is not anonymous, and has been authenticated.
+I'd expect this to apply the default authorization policy, which has a single requirement `DenyAnonymousAuthorizationRequirement`, which simply enforces that the incoming request's User is not anonymous, and has been authenticated.
 
 I also make sure to set up the required authorization services in the service configuration.
 

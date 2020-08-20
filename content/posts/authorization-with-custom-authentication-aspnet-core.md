@@ -76,7 +76,7 @@ With this set up, I can `Alt+F5` (or just `F5` if you are in VS) and start stepp
 
 Stepping through the code, I could see the default authorization policy, once evaluated, would result in `Challenged`. This doesn't mean it struggled to figure out an answer 🥁. What it means is it wants to return a challenge back to the user - they did not meet the policies requirements. In this case the requirements are simply that the user is not anonymous.
 
-It then calls `await context.ChallengeAsync();` to issue the challenge back to the user. This in turn calls `context.RequestServices.GetRequiredService<IAuthenticationService>().ChallengeAsync(context, scheme, properties)`. This resolves the `AuthenticationService`, which goes looking for a default authentication scheme, and 💥. We don't have one. Because we have our own custom authenticaiton middleware, remember?
+It then calls `await context.ChallengeAsync();` to issue the challenge back to the user. This in turn calls `context.RequestServices.GetRequiredService<IAuthenticationService>().ChallengeAsync(context, scheme, properties)`. This resolves the `AuthenticationService`, which goes looking for a default authentication scheme, and 💥. We don't have one. Because we have our own custom authentication middleware, remember?
 
 This is the problem.
 

@@ -76,9 +76,11 @@ Stepping through the code, I could see the default authorization policy, once ev
 
 It then calls `await context.ChallengeAsync();` to issue the challenge back to the user. This in turn calls `context.RequestServices.GetRequiredService<IAuthenticationService>().ChallengeAsync(context, scheme, properties)`. This resolves the `AuthenticationService`, which goes looking for a default authentication scheme, and 💥. We don't have one. Because we have our own custom authenticaiton middleware, remember?
 
-This is the problem. By default, `UseAuthorization` relies on you also using [AddAuthentication](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/policyschemes?view=aspnetcore-3.1) and providing a scheme so that the resolved `AuthenticationService` knows what sort of challenge to issue. If not, it will throw an exception. And if you are unlucky like me, you may be set up in such a way that the exception gets swallowed by another rogue piece of middleware, and you may end up with a `200 OK` instead.
+This is the problem.
 
-So the problem is that there is coupling between authentication and authorization in ASP.NET Core's default middleware. I don't think there should be, but there is. Authentication should be responsible for one thing - establishing the request principal. Authorization should be responsible for one thing - determining if the request principal has access to the requested resources.
+By default, `UseAuthorization` relies on you also using [AddAuthentication](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/policyschemes?view=aspnetcore-3.1) and providing a scheme so that the resolved `AuthenticationService` knows what sort of challenge to issue. If not, it will throw an exception. And if you are unlucky like me, you may be set up in such a way that the exception gets swallowed by another rogue piece of middleware, and you may end up with a `200 OK` instead.
+
+So ultimately there is implicit coupling between authentication and authorization in ASP.NET Core's default middleware. I don't think there should be, but there is. Authentication should be responsible for one thing - establishing the request principal. Authorization should be responsible for one thing - determining if the request principal has access to the requested resources.
 
 ## The Solution
 

@@ -29,7 +29,7 @@ webHostBuilder.Configure(app =>
 }
 ```
 
-I'd expect this to apply the default authorization policy, which has a single requirement `DenyAnonymousAuthorizationRequirement`, which simply enforces that the incoming request's User is not anonymous, and has been authenticated.
+The default authorization policy has a single requirement `DenyAnonymousAuthorizationRequirement`, which simply enforces that the incoming request's User is not anonymous, and has been authenticated.
 
 I also make sure to set up the required authorization services in the service configuration.
 
@@ -42,7 +42,9 @@ I also make sure to set up the required authorization services in the service co
 }
 ```
 
-Note that there are three distinct components here. One is `UseAuthorization`, which puts ASP.NET's `AuthorizationMiddleware` into our request pipeline, and enforces the defined policy for incoming requests depending on the route matched. The second is `RequireAuthorization`, which annotates our routes with `Authorize` metadata, ensuring the `AuthorizationMiddleware` has the information it needs to do it's job. The third is `AddAuthorization`, which registers authorization services such as the `AuthorizationPolicyProvider`, which the `AuthorizationMiddleware` needs to do it's job. If you don't do all three of these, things just won't work. Ask how I know.
+Note that there are three distinct components here.
+
+One is `UseAuthorization`, which puts ASP.NET's `AuthorizationMiddleware` into our request pipeline, and enforces the defined policy for incoming requests depending on the route matched. The second is `RequireAuthorization`, which annotates our routes with `Authorize` metadata, ensuring the `AuthorizationMiddleware` has the information it needs to do it's job. The third is `AddAuthorization`, which registers authorization services such as the `AuthorizationPolicyProvider`, which the `AuthorizationMiddleware` needs to do it's job. If you don't do all three of these, things just won't work. Ask how I know.
 
 Cool, with all of that in place, we should be successfully inspecting and authorizing whatever principal has been assigned to our HttpContext by our custom authentication middleware, right?
 
@@ -54,7 +56,7 @@ So I fire up the web server, and Postman, and shoot a request at a `Hello World`
 
 But it returns `200 OK`.
 
-What on earth? I'm expecting `401 Unauthorized` - we haven't met the policy, so we should be returning an unauthorized response.
+What on earth? I'm expecting `401 Unauthorized` - we haven't met the policy requirements, so we should be returning an unauthorized response.
 
 Queue re-reading the documentation, StackOverflow, and a bunch of blog posts n\* times. None of these adequately explain the behaviour I am seeing - almost all of of them focus on the 'happy path' of configuring out-of-the-box behaviour, and not mixing custom and out-of-the-box bits.
 

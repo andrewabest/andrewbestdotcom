@@ -68,7 +68,7 @@ Next, I want to crack open the entry point for where I want to start debugging. 
 
 With this set up, I can `Alt+F5` (or just `F5` if you are in VS) and start stepping through ASP.NET Core code locally.
 
-[magic](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
+![magic](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
 
 ## The Problem
 

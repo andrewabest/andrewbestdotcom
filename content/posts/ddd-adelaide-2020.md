@@ -28,7 +28,7 @@ When it became apparent that it would not be a responsible or possibly even lega
 
 This is a reasonable question. Many conferences, such as NDC, have been going virtual. Even some of the DDD conferences in Australia have hosted some smaller virtual events in lieu of their usual annual in-person event.
 
-The reason we chose not to go virtual is because it is not in the spirit of DDD Adelaide.
+The reason we chose not to go virtual is because it does not fit the _why_ of DDD Adelaide.
 
 > The reason we put on DDD Adelaide is to bring together the Adelaide software community.
 

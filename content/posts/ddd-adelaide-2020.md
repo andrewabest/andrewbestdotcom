@@ -6,9 +6,9 @@ draft: false
 
 In 2019, [David Gardiner](https://twitter.com/davidrgardiner) and I organized DDD Adelaide, a not-for-profit software conference that sought to bring the Adelaide software community together.
 
-The main driver behind DDD Adelaide (and many of the other Australian DDD conferences) isn't having high profile speakers, or a primary focus on content. This is exemplified by the way the agenda is democratically chosen, with talks being voted in by the community - your conference, your way (in fact, if you had a ticket, your vote counted even more!).
+The _why_ behind DDD Adelaide (and many of the other Australian DDD conferences) isn't having high profile speakers, or a primary focus on content. This is exemplified by the way the agenda is democratically chosen, with talks being voted in by the community - your conference, your way (in fact, if you had a ticket, your vote counted even more!).
 
-The reason we put on DDD Adelaide is to bring together the Adelaide software community. It provides a place for SA software developers to get to know what other awesome people are around in the community, and to discover new opportunities that may exist for them in their own back yard. It also provides a place for local businesses to showcase the great things they do with technology, and how SA is full of strong, innovative enterprises that are powered by technology.
+DDD Adelaide's _why_ is to bring together the Adelaide software community. It provides a place for SA software developers to get to know what other awesome people are around in the community, and to discover new opportunities that may exist for them in their own back yard. It also provides a place for local SA businesses to showcase the great things they do with technology, and the opportunities they can provide for our local software talent.
 
 It doesn't hurt if you can provide that AND amazing content though 😏
 

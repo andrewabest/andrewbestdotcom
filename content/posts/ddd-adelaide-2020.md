@@ -16,7 +16,7 @@ I cannot understate how blown away Dave and I were at the response we got for th
 
 ![DDD Adelaide by the numbers](/ddd-adelaide-2020/DDD-Adelaide-2.jpg)
 
-You could imagine that Dave and I were pretty keen to plan the next event for 2020. More people, more talks, more awesome!
+You could imagine that Dave and I were pretty keen to plan the next event for 2020. More people, more talks, more SA great-ness!
 
 And then there was COVID-19.
 

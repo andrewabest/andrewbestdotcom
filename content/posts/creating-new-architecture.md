@@ -1,6 +1,6 @@
 ---
 title: "Creating New Architecture"
-date: 2021-05-21T00:00:00+10:00
+date: 2021-05-21T06:00:00+09:30
 draft: false
 canonical: "https://octopus.com/blog/creating-new-architecture"
 ---

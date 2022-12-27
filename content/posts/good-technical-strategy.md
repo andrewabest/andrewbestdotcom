@@ -42,11 +42,11 @@ A technical strategy first and foremost communicates problems and impacts. Witho
 
 ## Focus
 
-With a Big Problem identified, we need to be able to define How we intend to solve the problem. This does not mean jumping straight into solutions though, which can be thought of as the What of the strategy.
+With a _Big Problem_ identified, we need to be able to define _how_ we intend to solve it. This does not mean jumping straight into solutions though - these are the _what_ of the strategy, and will come later.
 
-"How we intend to solve the problem" can be defined as a set of guiding policies, which provide a strong rationale and frame for solutions to be defined within.
+"How we intend to solve the problem" can be defined as a set of **guiding policies**, which provide a strong rationale and frame for solutions to be defined within.
 
-Here is an excerpt of a technical strategy I have recently developed:
+Here is an excerpt from a technical strategy I recently developed:
 
 > Completing Incomplete Migrations
 >
@@ -54,19 +54,19 @@ Here is an excerpt of a technical strategy I have recently developed:
 >
 > Much of this technical debt exists due to incomplete migrations. Migrations are large-scale pieces of work that trade investment now for productivity later. The biggest improvements to product velocity will come from finishing these migrations.
 
-The guiding policy here is completing incomplete migrations. The policy describes how it aligns with the identified problem (incomplete migrations are impacting lead time), and how following it will have a positive, large impact on the problem (completing migrations will significantly reduce lead time due to reduced engineering effort and increased engineering quality).
+The guiding policy here is for completing incomplete migrations. The policy describes how it aligns with the identified problem (incomplete migrations are impacting lead time), and how following it will have a positive, large impact on the problem (completing migrations will significantly reduce lead time due to reduced engineering effort and increased engineering quality).
 
 The policy level is a great place to sounding board your intentions. If you do not have confidence that investing in actions under this policy would have a strong impact on your big problem, it is probably a good sign you need to further analyze your problem to understand how you can best impact it.
 
-Quite often your policies will sound obvious. Deceptively obvious. This is not a bad thing. For many big problems, you already likely know what the right courses of action are. You've thought about them at length. You've been impacted by them for a long time. A technical strategy does not need to be a revolution - just an evolution.
+Quite often your policies will sound obvious. _Deceptively obvious_. This is not a bad thing. Firstly, it is a sign you have achieved clarity of your problem. For the solution to seem obvious, the problem must be well understood. Secondly, for many big problems, you already likely know what the right courses of action are. You've thought about them at length. You've been impacted by them for a long time. A technical strategy does not need to be a revolution - just an evolution.
 
 ## Execution
 
-You've built clarity on a Big Problem, and helped Focus in on how you're intending to solve the problem - now is the time for Execution - what specific actions will we take to move the needle on our problem? How are we going to execute?
+You've built clarity on a _Big Problem_, and helped _Focus_ in on how the problem should be solved - now is the time for _Execution_ - what specific **actions** will we take to move the needle on our problem? How are we going to execute?
 
 Execution means work. Doing the needful. Making it so. Taking action.
 
-Without execution, we have no impact. We will discuss this further in the Bad Strategy section below.
+Without execution, we have no impact. We will discuss this further in the _Bad Strategy_ section below.
 
 Sometimes the work that needs to be done will not neatly align with your current organizational structure. In fact, it probably wont. You also probably won't have "spare budget" laying around to fund the work either.
 
@@ -74,21 +74,21 @@ The hardest part of execution isn't writing code. It isn't shoveling mountains o
 
 "Hold on! Shouldn't we just be able to get teams to do this alongside their other work?" you may say. Possibly. But this will still disrupt their work, at the very least prolonging timeframes and extending commitments.
 
-The two things that will ensure you can execute effectively are alignment - in which everyone agrees on the severity and impact of the Big Problem presented, and endorsement, in which the strategy has appropriate executive or senior leadership buy in, and prioritizing it above other in flight initiatives is endorsed by them explicitly.
+The two things that will ensure you can execute effectively are _alignment_ - in which everyone agrees on the severity and impact of the _Big Problem_ presented, and _endorsement_, in which the strategy has appropriate executive or senior leadership buy-in, and prioritizing it above other in-flight initiatives is endorsed by them explicitly.
 
 # Bad Strategy
 
-We've talked about technical strategy involving three main components - a big problem, a set of guiding policies, and specific actions framed by those policies.
+We've talked about technical strategy having three main ingredients - a big problem, a set of guiding policies, and specific actions framed by those policies.
 
 With these ingredients, we create clarity, provide focus, and deliver impact.
 
 If you remove any one of the three ingredients, different problems can occur. I want to focus on the one that I've seen most often: strategy without execution.
 
-Strategy without execution means you never deliver impact.
+Strategy without execution means **you never deliver impact**.
 
 Many strategies simply look like a set of policies that do not clearly align with a specific problem, nor do they define specific actions that will solve those problems. They simply define policies that sound well-meaning, but ultimately have little impact on the product or the business.
 
-Here is an excerpt from a technical strategy I consider a bad strategy. I'm happy to provide this as I authored it.
+Here is an excerpt from a technical strategy I consider to be a bad strategy. I'm happy to provide this as I authored it.
 
 > Pits of success
 >
@@ -102,13 +102,13 @@ Here is an excerpt from a technical strategy I consider a bad strategy. I'm happ
 >
 > These pits of success lower the cognitive overhead of working within the system - you can spend less time worrying about code style, release management, and other automatable tasks, and more time focused on your work.
 
-I'd written a number of these policies into a document. They were well intentioned. They spoke of guiding principles we wanted our engineers to follow, and should they be followed, would result in a high functioning, capable engineering team with an optimal lead time and great control over the software under their stewardship.
+I'd written a number of these policies into a document. They were well intentioned. They spoke of guiding principles we wanted our engineers to follow, and should they be followed, would result in high functioning, capable engineering teams with an optimal lead times and great control over the software under their stewardship.
 
 I wasn't satisfied with the result.
 
 I couldn't picture how teams, or the business, would be impacted by these policies. I couldn't put myself into the shoes of a team lead or engineer on a team, and see what value I would get out of this "strategy" - what specific behavior changes I would make after reading it.
 
-Ultimately this was because the document did not create clarity on the specific problems it was looking to solve, nor did it define specific actions that would be taken to solve those problems. It relied on the reader to somehow translate its policies and connect them to localized problems, and likely to localized solutions.
+Ultimately this was because the document did not create clarity on the specific problems it was looking to solve, nor did it define specific actions that would be taken to solve those problems. It relied on the reader to somehow translate its policies and connect them to localized problems, likely ending up with localized solutions.
 
 I ended up throwing that strategy in the bin and starting again. I didn't regret the time I had invested in it - in fact it helped me build my own clarity on what the key ingredients of good strategy were, and gave me a concrete example of what bad strategy looked like.
 

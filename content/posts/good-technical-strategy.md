@@ -116,7 +116,7 @@ I ended up throwing that strategy in the bin and starting again. I didn't regret
 
 # Can I Help?
 
-Are you trying and failing to gain traction on big problems similar to what I've described above? Did this post resonate with you? Take a look at https://www.andrew-best.com/about/ and drop me a line / DM / nerd-snipe on whichever of the channels suits you best!
+Are you trying and failing to gain traction on big problems similar to what I've described above? Did this post resonate with you? Have a read of [https://www.andrew-best.com/about/](my about page) and drop me a line / DM / nerd-snipe on whichever of the channels at the bottom suits you best!
 
 # Acknowledgements
 

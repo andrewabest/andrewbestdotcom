@@ -11,4 +11,4 @@ With broad and deep knowledge in digital strategy, agile delivery, team leadersh
 
 I'm currently with [Octopus Deploy](https://www.octopus.com) as a Principal Software Engineer, and am looking forward to contributing to the growth and success of an already amazing product and company!
 
-Need a [speaker](https://www.andrew-best.com/speaking/) for an event? Want to talk about [solving problems](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) that you and your team are currently tackling? Need someone to help represent technology within your business? I'm more than happy to buy the coffees ☕☕
+Need a [speaker](https://www.andrew-best.com/speaking/) for an event? Want to talk about [solving problems](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) that you and your team are currently tackling? Need someone to help [represent technology](https://www.andrew-best.com/posts/good-technical-strategy/) within your business? I'm more than happy to buy the coffees ☕☕

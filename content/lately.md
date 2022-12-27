@@ -11,10 +11,11 @@ I'm currently living in [Adelaide, Australia](https://time.is/Adelaide).
 
 # What am I doing now?
 
-- Building an entirely new team at [Octopus Deploy](https://www.octopus.com), and creating new architecture that will help us attract diverse new people to work with us, and make delivering great new deployment experiences from Octopus simple and easy! If this sort of adventure sounds to your liking, and you'd like to join in, [drop me an email!](mailto:andrew.a.best@gmail.com)
+- Helping [Octopus Deploy](https://www.octopus.com) deliver on its most ambitious year to date, which will see us increase the capability of our cloud hosting offering by an order of magnitude, continue to add features to Octopus that no other deployment tool offers today, and provide hands-down best-in-class quality of service to our customers. I will be leading 🍉 _Watermelon Group_ (✨codenames✨), with objectives including ensuring we contine to earn a high level of trust from our enterprise cloud customers, and ensuring our engineers have access to a reliable, best-of-breed delivery pipeline for shipping their work.
 
 ## Previously
 
+- Building an entirely new team at [Octopus Deploy](https://www.octopus.com), and creating new architecture that will help us attract diverse new people to work with us, and make delivering great new deployment experiences from Octopus simple and easy! [DONE!](https://octopus.com/blog/improving-delivery-deployment-steps)
 - Ramping up at [Octopus Deploy](https://www.octopus.com)! I've had a desire to work with a product organization for a while now, and Octopus is a perfect fit for me.
 - Scheming on what might be for [DDD Adelaide](https://dddadelaide.com/) 2020. 2019 was AMAZING and an outright success, and I want 2020 to be bigger and better.
 - Building a product in Azure, and [Learning some things](https://www.andrew-best.com/posts/please-sir-can-i-have-some-auth/) along the way.

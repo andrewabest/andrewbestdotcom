@@ -16,7 +16,7 @@ The whole team likely knows the why behind these choices, and applies them day-t
 
 At some point, as your software grows, and as your teams grow in size and in number, it will be harder to build consensus. People's perspectives will diverge, and they will think different things are the most important things. Overarching problems will exist that are bigger than any one team. Local optimizations will be invested in, and global optimizations will be overlooked.
 
-If you are a technical leader - a VP of Engineering, a CTO, a Head of Engineering - it is your responsibility to identify this inflection point, and to help get ahead of this organizational problem. It is your problem to ensure the big problems do get solved in a timely and effective manner, so that the software can continue to evolve and scale to support the businesses ongoing objectives.
+If you are a technical leader - a VP of Engineering, a CTO, a Head of Engineering - it is your responsibility to identify this inflection point, and to help get ahead of this organizational problem. It is your problem to ensure the big problems do get solved in a timely and effective manner, so that the software can continue to evolve and scale to support the business's ongoing objectives.
 
 One of the best tools to solve these types of big problems is a **good technical strategy**.
 

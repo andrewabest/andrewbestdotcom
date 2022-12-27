@@ -68,13 +68,15 @@ Execution means work. Doing the needful. Making it so. Taking action.
 
 Without execution, we have no impact. We will discuss this further in the _Bad Strategy_ section below.
 
+For the technical strategy referenced above, the actions under the _Completing Incomplete Migrations_ policy took the form of a handful of independently planned and executed projects that all aligned with the policy, and had a meaningful impact on the problem.
+
 Sometimes the work that needs to be done will not neatly align with your current organizational structure. In fact, it probably wont. You also probably won't have "spare budget" laying around to fund the work either.
 
 The hardest part of execution isn't writing code. It isn't shoveling mountains of technical debt. It isn't creating clever new architecture. Its figuring out how to get the work done in a way that is "commensurately disruptive" to all of the other very important things your company is doing right now. Your org will need to make tradeoffs to fund the execution of the technical strategy. You should weight the impact of disruption with the benefit of solving the identified Big Problems.
 
 "Hold on! Shouldn't we just be able to get teams to do this alongside their other work?" you may say. Possibly. But this will still disrupt their work, at the very least prolonging timeframes and extending commitments.
 
-The two things that will ensure you can execute effectively are _alignment_ - in which everyone agrees on the severity and impact of the _Big Problem_ presented, and _endorsement_, in which the strategy has appropriate executive or senior leadership buy-in, and prioritizing it above other in-flight initiatives is endorsed by them explicitly.
+The two things that will ensure you can execute effectively are _alignment_ - in which everyone agrees on the _Big Problem_ and its severity and impact, and _endorsement_, in which the strategy has appropriate executive or senior leadership buy-in, and prioritizing it above other in-flight initiatives is endorsed by them explicitly.
 
 # Bad Strategy
 

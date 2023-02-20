@@ -122,4 +122,8 @@ Are you trying and failing to gain traction on big problems similar to what I've
 
 The above is heavily influenced by Richard Rumelt's [Good Strategy / Bad Strategy](https://www.amazon.com.au/Good-Strategy-Bad-Difference-Matters/dp/0307886239), which strongly resonated with me, and helped build my own clarity on the ingredients of a good strategy.
 
-I'd also like to give props to my colleague [Alix Klingenberg](https://twitter.com/evolutionises) for using the phrase "deceptively obvious" recently to describe some of our organizational technical decision making, which to me perfectly encapsulates what many good technical decisions look like.
+I'd like to give props to my colleague [Alix Klingenberg](https://twitter.com/evolutionises) for using the phrase "deceptively obvious" recently to describe some of our organizational technical decision making, which to me perfectly encapsulates what many good technical decisions look like.
+
+### Update Feb 2023
+
+[Will Larson](https://lethain.com/) posted a [new article on writing technical strategy](https://lethain.com/eng-strategies/). I initially read Will's [original article on writing strategies](https://staffeng.com/guides/engineering-strategy) which I thought was insightful, but didn't quite gel with how our organization was working at the time. Will's new article more closely aligns with what I've written about above, and goes beyond that to provide some nice mental models for assessing your guiding policies, and some typical types of concrete actions you may execute under those policies.

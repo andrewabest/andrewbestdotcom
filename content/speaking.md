@@ -5,8 +5,6 @@ menu: "main"
 draft: false
 ---
 
-I've always enjoyed sharing hard-earned knowledge with the community. I've always found my best talks are those that are distillations of real experiences. I've spoken at DDD conferences across Australia, at community events such as the Brisbane .NET user group - Australia's largest tech user group, and have delivered many more internal presentations and workshops to clients and employers.
-
 # Upcoming
 
 <script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/f846ad20-530a-4e34-8ef8-476fa83c59c4/0x0x5949f6x"></script>

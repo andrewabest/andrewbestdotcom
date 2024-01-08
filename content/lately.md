@@ -11,7 +11,7 @@ I'm currently living in [Adelaide, Australia](https://time.is/Adelaide).
 
 # What am I doing now?
 
-- Helping [Octopus Deploy](https://www.octopus.com) deliver on its most ambitious year to date, which will see us increase the capability of our cloud hosting offering by an order of magnitude, continue to add features to Octopus that no other deployment tool offers today, and provide hands-down best-in-class quality of service to our customers. I will be leading 🍉 _Watermelon Group_ (✨codenames✨), with objectives including ensuring we contine to earn a high level of trust from our enterprise cloud customers, and ensuring our engineers have access to a reliable, best-of-breed delivery pipeline for shipping their work.
+- Helping [Octopus Deploy](https://www.octopus.com) deliver on its most ambitious year to date, which will see us increase the capability of our cloud hosting offering by an order of magnitude, continue to add features to Octopus that no other deployment tool offers today, and provide hands-down best-in-class quality of service to our customers. I will be leading 🍉 _Watermelon Group_ (✨codenames✨), with objectives including ensuring we continue to earn a high level of trust from our enterprise cloud customers, and ensuring our engineers have access to a reliable, best-of-breed delivery pipeline for shipping their work.
 
 ## Previously
 

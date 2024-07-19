@@ -15,12 +15,7 @@ draft: false
 # Previous
 
 * **Sat 18 Nov 2023** => [DDD Adelaide - Organizer and MC](https://dddadelaide.com)
-* **Wed 8 April 2020** => Adelaide .NET User Group - Learn Authentication The Hard Way
-	
-	📜 [Slides](https://speakerdeck.com/andrewabest/learn-authentication-the-hard-way) 
-	
-	📽 [Recording](https://youtu.be/l2PjqAn_Iy4)
-
+* **Wed 8 April 2020** => Adelaide .NET User Group - Learn Authentication The Hard Way 📜 [Slides](https://speakerdeck.com/andrewabest/learn-authentication-the-hard-way) 📽 [Recording](https://youtu.be/l2PjqAn_Iy4)
 * **Sat 23 Nov 2019** => [DDD Adelaide - Organizer and MC](https://dddadelaide.com)
 * **Wed 8 May 2019** => [Adelaide .NET User Group - Visual Studio 2019 Launch](https://github.com/adelaide-dotnet/meeting-logistics/wiki/Speaker-history)
 * **Sat 2 December 2017** => [DDD Brisbane - Finding The Sweet Spot](https://speakerdeck.com/andrewabest/finding-the-sweet-spot)

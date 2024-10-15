@@ -1,5 +1,5 @@
 ---
-title: "The Surprising Truth Behind Good Mentoring"
+title: "The Surprising Truths Behind Good Mentoring"
 date: 2024-10-14T20:00:00+10:00
 draft: false
 ---
@@ -14,7 +14,7 @@ This talk is formed from my own experience and journey in being a mentor, and in
 
 At the start I wasn't very good at it. I had a lot of assumptions as to what I needed to do, what was important. 
 
-As Jake from Adventure Time says: Sucking at something is the first step toward being kinda good at something. So I sucked.
+As Jake from Adventure Time says: _Suckin at something is the first step toward being kinda good at something_. So I sucked.
 
 And over time, through trial and error, many of my assumptions were invalidated, and I learned what good actually looked like.
 
@@ -157,8 +157,8 @@ If you are participating in an informal mentoring relationship, make sure you ad
 
 I often know if I've found a great mentor when they tell me things that:
 
-	- Surprise me, and I know that I would not have come up with on my own
-	- That I strongly agree with
+- Surprise me, and I know that I would not have come up with on my own
+- That I strongly agree with
 
 Usually these will be based on me bringing a problem to them that I'm not sure on. Or maybe I think I'm sure of, so I'll give them my current strong opinion.
 

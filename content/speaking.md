@@ -8,12 +8,12 @@ draft: false
 # Upcoming
 
 * **Sat 23 Nov 2024** => [DDD Adelaide - Organizer and MC](https://dddadelaide.com)
-* **Fri 13 Sep 2024** => [YOW! Tech Leaders Summit Melbourne](https://yowcon.com/tech-leaders-melbourne-2024/speakers/3617/andrew-best)
 
 <script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/f846ad20-530a-4e34-8ef8-476fa83c59c4/0x0x5949f6x"></script>
 
 # Previous
 
+* **Fri 13 Sep 2024** => [YOW! Tech Leaders Summit Melbourne](https://yowcon.com/tech-leaders-melbourne-2024/speakers/3617/andrew-best)
 * **Sat 18 Nov 2023** => [DDD Adelaide - Organizer and MC](https://dddadelaide.com)
 * **Wed 8 April 2020** => Adelaide .NET User Group - Learn Authentication The Hard Way 📜 [Slides](https://speakerdeck.com/andrewabest/learn-authentication-the-hard-way) 📽 [Recording](https://youtu.be/l2PjqAn_Iy4)
 * **Sat 23 Nov 2019** => [DDD Adelaide - Organizer and MC](https://dddadelaide.com)

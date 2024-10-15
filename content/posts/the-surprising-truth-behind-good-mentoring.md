@@ -4,7 +4,7 @@ date: 2024-10-14T20:00:00+10:00
 draft: false
 ---
 
-In September 2024, I gave a talk at YOW! Tech Leaders Summit Melbourne entitled _The Surprising Truths Behind Good Mentoring_. It built upon and extended on a previous article I wrote called [How Not To Suck At Mentoring](https://www.andrew-best.com/posts/how-to-not-suck-at-mentoring/), and incorporated a bunch of new learnings as well.
+In September 2024, I gave a talk at [YOW! Tech Leaders Summit Melbourne](https://yowcon.com/tech-leaders-melbourne-2024/speakers/3617/andrew-best) entitled _The Surprising Truths Behind Good Mentoring_. It built upon and extended on a previous article I wrote called [How Not To Suck At Mentoring](https://www.andrew-best.com/posts/how-to-not-suck-at-mentoring/), and incorporated a bunch of new learnings as well.
 
 Rather than rewrite the talk as a post, I thought I'd share the script for the talk, along with the slides. If you've seen me give the talk you might notice the map and the terrain diverge a bit - I can never seem to follow a script when presenting!
 

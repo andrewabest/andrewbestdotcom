@@ -37,6 +37,7 @@ Building solutions that integrate LLMs, typically called agents, requires new to
 Evals are human-driven, LLM-assisted feedback loops that help you assess and manage the quality of your agents outputs. They are your unit-tests for non-deterministic workloads. They give you confidence that your agent is delivering quality outputs across a broad range of inputs. If you want to learn more about evals, go read [Hamel Husain's](https://hamel.dev/) posts from the past two years - he is the authority on evals.
 
 Now there are solutions in the market to this problem at the moment. I've evaluated a handful of them, including [LangSmith](https://www.langchain.com/langsmith) and [Braintrust](https://www.braintrust.dev/). All the solutions have a number of drawbacks _in my particular context_. Common to these were:
+
 - You only get a first-class experience with them if you are using python (or occasionally TypeScript)
 - They have opinionated workflows for iterating on prompt and agent development that don't take first-class function calling into account. They want to be walled gardens for agent development
 

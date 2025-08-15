@@ -82,3 +82,7 @@ There are a few great things about vibe-coding your own tools:
 - You can get results in less time than it would take you to discover tools in market that solve your problem, set up trials of them, and integrate and test their effectiveness.
 - You can tailor them to your context and needs. No more fitting your problem to their solution.
 - Once you are done with it, or your needs exceed what you're willing to build into the tool, you can throw it away. You've only spent a handful of hours on it, not days or weeks. It is not your precious. There is no sunk cost. You can discard it when you're done.
+
+## Disclaimer
+
+This post shouldn't need a disclaimer. Don't vibe-code your own auth platform because Auth0 is too expensive. Be a sensible human.

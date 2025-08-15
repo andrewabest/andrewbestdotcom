@@ -43,6 +43,7 @@ Now there are solutions in the market to this problem at the moment. I've evalua
 These problems are both showstoppers for me. I'm developing agents with .NET, using [Semantic Kernel](https://github.com/microsoft/semantic-kernel). And the agent is deeply integrated with Octopus's core domain, giving the agent access to fine-grained capabilities that help it fulfil its duties.
 
 What I need from an eval tool is:
+
 - It must work purely by ingesting OpenTelemetry traces, without additional instrumentation
 - It must give me a way to create eval sessions of arbitrary size driven from existing common automated test tooling (like XUnit or Jest)
 - It must exercise the agent as-built, with full access to the functions it can call within Octopus to fulfill its responsibilities. 
@@ -69,6 +70,7 @@ With those pieces in place, the solution came together over a two-hour session.
 One of the keys to success with AI tools is managing context. The best way to do this is to break work down into chunks. 
 
 One of the first jobs I needed to do was to select and upload an OpenTelemetry jsonl file, then read it into memory and parse it into a data structure I would use for evaluation and storage. I broke this down into the following steps:
+
 - Build a UI to select and upload a file, and log its contents on the backend
 - Parse the uploaded file into a particular data structure, called Sessions. I gave Claude the input file structure via example, and defined the target model by describing it in words, and how the inputs would map to the model. It would then write each individual session to disk
 - Display a list of the uploaded sessions in the UI, and allow the user to click on one and open up a session details page, using the session ID as a route. Stub out the details page

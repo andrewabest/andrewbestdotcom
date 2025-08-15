@@ -4,17 +4,17 @@ date: 2025-08-15T08:00:00+09:30
 draft: false
 ---
 
-I've currently been using Claude Code a lot in my day to day work. There are a lot of hot takes around AI around the tech industry right now. One way you can cut through those hot takes is to observe the impact it is having _where you are_.
+I've currently been using Claude Code a lot in my day to day work. There are a lot of AI hot takes floating around the tech industry right now. One way you can cut through those hot takes is to observe the impact it is having _where you are_.
 
 I work at [Octopus](https://octopus.com/) and am surrounded by some of the very best software engineers in the industry. I value and leverage their opinions continuously in my own work, and they always improve the quality of my execution and my decision making.
 
-We've gone to a bit of effort recently to ensure all of our engineers have an AI tool available to them that they can use reflexively in their day to day work. There is likely an entire post to be written on that process, how we've approached it, and the impact we've seen, but I'll reserve that for another time.
+We've gone to a bit of effort recently to ensure all of our engineers have an AI tool available to them that they can use reflexively in their day to day work. There is likely an entire post to be written on that process, how we've approached it, and the impact we are seeing, but I'll reserve that for another time.
 
 Much of the teeth gnashing and hyperbole around AI tools centers around them replacing human software engineers. That they are evolving in a way that leads us toward some sort of singularity where AI growth becomes uncontrollable and irreversible, replacing humans and altering the course of history.
 
-But if you observe _really good engineers_ working with AI, you don't see them despondent. You don't see them belligerently avoiding the tools, espousing the values of hand-wrought code and human toil. The response spectrum I see goes from humorous observation when the tools inevitably go off the rails, through to delight and even awe when they create solutions with a fraction of the effort or cost than it would have taken previously.
+But if you observe _really good engineers_ working with AI, you don't see them despondent. You don't see them belligerently avoiding the tools, espousing the values of hand-wrought code and human toil. The response spectrum I see goes from humorous observation when the tools occasionally and inevitably go off the rails, through to delight and awe when they create solutions with a fraction of the effort or cost than it would have taken previously.
 
-The famous Steve Jobs quote "Computers are like a bicycle for the mind" has been reframed several times, most recently as "AI is like a motorcycle for the mind". This is what I see when great engineers get their hands on these tools and start using them in anger. Once engineers start building an intuition for where the tools are strongest, and how they can accelerate or completely eliminate toil and tedious tasks, you see them eagerly leaning into them, realising how much _better_ they make the craft of building software.
+The famous Steve Jobs quote "Computers are like a bicycle for the mind" has been reframed several times, most recently as "AI is like a motorcycle for the mind". This is what I see when great engineers get their hands on these tools and start using them in anger. Once engineers start building an intuition for where the tools are strongest, and how they can accelerate or completely eliminate toil and tedious tasks, or make tasks that were previously too costly now surmountable and achievable, you see them eagerly leaning into these tools, realising how much _better_ they make the craft of building software.
 
 ## Buy vs Build
 
@@ -44,7 +44,7 @@ These problems are both showstoppers for me. I'm developing agents with .NET, us
 
 What I need from an eval tool is:
 - It must work purely by ingesting OpenTelemetry traces, without additional instrumentation
-- It must give me a way to create eval sessions of arbitrary size - ideally I can drive the creation of the session and ingestion of traces from standard testing tools like XUnit
+- It must give me a way to create eval sessions of arbitrary size driven from existing common automated test tooling (like XUnit or Jest)
 - It must exercise the agent as-built, with full access to the functions it can call within Octopus to fulfill its responsibilities. 
 - It must provide me a productive interface for human assessment of trace sessions that emphasizes readability and rapid review
 
@@ -56,7 +56,7 @@ AI has put its thumb on the scales of the buy vs build conversation though. It i
 
 ## Building an AI Eval Tool
 
-I chose to build my own AI Eval tool. I'd build it primarily via Claude Code, and tweak and finesse it as I went along.
+I chose to build my own AI Eval tool for this reason - it now seemed like a viable path to take. I'd build it primarily via Claude Code, and tweak and finesse it as I went along.
 
 I'd already scaffolded some automated tests around our agent that drove it with a set of representative sample inputs gathered from production scenarios, and the agent emitted OpenTelemetry traces that contained the details we would want to evaluate. I used XUnit for these tests, but this approach is technology-agnostic, you could do the same with JUnit, or Jest.
 

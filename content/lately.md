@@ -11,10 +11,11 @@ I'm currently living in [Adelaide, Australia](https://time.is/Adelaide).
 
 # What am I doing now?
 
-- With [Octopus acquiring Codefresh](https://octopus.com/blog/octopus-acquires-codefresh) big changes are on the horizon. I'm helping ensure we make the right technical decisions and shifts to ensure we are well-placed to realise our ambitions of remaining the #1 Enterprise Devops product, helping companies tame complex deployments in any scenario
+Building the AI Foundations team at Octopus, architecting the tools and technology that transform how Octopus R&D teams deliver our next generation of customer solutions. Our work will directly enable solving problems that were previously impossible.
 
 ## Previously
 
+- With [Octopus acquiring Codefresh](https://octopus.com/blog/octopus-acquires-codefresh) big changes are on the horizon. I'm helping ensure we make the right technical decisions and shifts to ensure we are well-placed to realise our ambitions of remaining the #1 Enterprise Devops product, helping companies tame complex deployments in any scenario
 - Helping [Octopus Deploy](https://www.octopus.com) deliver on its most ambitious year to date, which will see us increase the capability of our cloud hosting offering by an order of magnitude, continue to add features to Octopus that no other deployment tool offers today, and provide hands-down best-in-class quality of service to our customers. I will be leading 🍉 _Watermelon Group_ (✨codenames✨), with objectives including ensuring we continue to earn a high level of trust from our enterprise cloud customers, and ensuring our engineers have access to a reliable, best-of-breed delivery pipeline for shipping their work. [DONE!](https://octopus.com/blog/defining-target-architecture)
 - Building an entirely new team at [Octopus Deploy](https://www.octopus.com), and creating new architecture that will help us attract diverse new people to work with us, and make delivering great new deployment experiences from Octopus simple and easy! [DONE!](https://octopus.com/blog/improving-delivery-deployment-steps)
 - Ramping up at [Octopus Deploy](https://www.octopus.com)! I've had a desire to work with a product organization for a while now, and Octopus is a perfect fit for me.

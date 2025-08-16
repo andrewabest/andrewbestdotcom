@@ -30,7 +30,7 @@ This leaves us in a tricky situation. Either we overpay to solve the problem; or
 
 I ran into this problem recently.
 
-I'm heading up the effort to bring AI capabilities into Octopus, helping our teams solve problems that were previously unsolvable using the same LLM technology our engineers are enjoying in their daily work. We are hiring by the way: [octopus.com/careers](octopus.com/careers).
+I'm heading up the effort to bring AI capabilities into Octopus, helping our teams solve problems that were previously unsolvable using the same LLM technology our engineers are enjoying in their daily work. We are hiring by the way: [octopus.com/careers](https://octopus.com/careers).
 
 Building solutions that integrate LLMs, typically called agents, requires new tooling to support new feedback loops that aren't found in existing software systems. Core to these new feedback loops are evals. 
 

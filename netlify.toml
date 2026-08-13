@@ -1,0 +1,13 @@
+# Pins the Hugo version used to build this site, so the dependency is explicit
+# in code rather than living only in the Netlify UI.
+#
+# The minimo theme declares a minimum of Hugo 0.123 extended (see
+# themes/minimo/config.toml), so do not lower this past that. The site also
+# relies on APIs and behaviour that only exist in modern Hugo -- it cannot be
+# built by the 0.42 this site was previously pinned to.
+#
+# The theme asks for the "extended" build for its SCSS pipeline. This site ships
+# pre-compiled CSS in themes/minimo/static/assets/css, so a non-extended Hugo
+# still builds it successfully and only logs a module compatibility warning.
+[build.environment]
+  HUGO_VERSION = "0.165.0"

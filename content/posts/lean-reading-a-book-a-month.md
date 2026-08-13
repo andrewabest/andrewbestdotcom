@@ -33,7 +33,7 @@ If I abandon a book, I can pick it back up in a subsequent month if I choose to,
 By ensuring I have a hard limit on the time I spend with any one book, I:
 
 * Maximise my throughput within the finite time I have for reading
-* Limit my [opportunity cost]((https://en.wikipedia.org/wiki/Opportunity_cost)) from delaying my reading queue
+* Limit my [opportunity cost](https://en.wikipedia.org/wiki/Opportunity_cost) from delaying my reading queue
 * [Reduce waste, and create flow](https://leankit.com/learn/lean/5-principles-of-lean/).
 
 And most importantly, I'll likely get a lot of joy out of reading to grow and challenge myself!

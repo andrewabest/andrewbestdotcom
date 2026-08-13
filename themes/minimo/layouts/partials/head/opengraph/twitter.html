@@ -11,7 +11,30 @@
   {{- end -}}
 {{- end -}}
 
-{{- with .Site.Params.cover -}}
-  <meta property='twitter:image' content='{{- .image | absURL -}}'>
-  <meta property='twitter:image:alt' content='{{ .alt | markdownify }}'>
+{{- with .Params.cover -}}
+  {{- $type := ( printf "%T" . ) -}}
+  {{- $isMap := ( not ( eq $type "string" ) ) -}}
+
+  {{- $image := "" -}}
+  {{- if $isMap -}}
+    {{- $image = .image -}}
+  {{- else -}}
+    {{- $image = . -}}
+  {{- end -}}
+
+  {{- $image = ( replaceRE "^\\./" $.RelPermalink $image ) -}}
+
+  <meta property='twitter:image' content='{{- $image | absURL -}}'>
+  {{- if $isMap -}}
+    {{- with .caption -}}
+    <meta property='twitter:image:alt' content='{{ . | markdownify }}'>
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- with .Site.Params.cover -}}
+    <meta property='twitter:image' content='{{- .image | absURL -}}'>
+    {{- with .alt -}}
+    <meta property='twitter:image:alt' content='{{ . | markdownify }}'>
+    {{- end -}}
+  {{- end -}}
 {{- end -}}

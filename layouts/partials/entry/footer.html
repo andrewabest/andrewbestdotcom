@@ -1,0 +1,52 @@
+{{/*
+  Project-level override of the theme's entry footer.
+
+  This lives here rather than in themes/minimo/ so that it survives theme
+  updates. Hugo gives project layouts precedence over theme layouts.
+
+  The theme emits <div class='container sep-before'> unconditionally. That
+  class draws a horizontal rule via a :before pseudo-element, so when there is
+  no last-modified date and no taxonomy terms to list, the page still gets a
+  rule from an otherwise empty div -- appearing as a duplicate immediately
+  above the rule belonging to the previous/next entry nav.
+
+  This works out whether there is anything to render first, and emits the
+  footer only if so. When there is content, the markup is identical to the
+  theme's.
+*/}}
+{{- $showLastmod := and ( eq .Site.Params.settings.showLastmod true ) ( not ( eq .Lastmod .Date ) ) -}}
+
+{{- $hasTaxonomyTerms := false -}}
+{{- range $taxonomy, $pages := .Site.Taxonomies -}}
+  {{- if not ( eq $taxonomy "authors" ) -}}
+    {{- if ( index $.Params $taxonomy ) -}}
+      {{- $hasTaxonomyTerms = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{ if and ( not ( eq .Section "page" ) ) ( or $showLastmod $hasTaxonomyTerms ) }}
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  {{- if $showLastmod -}}
+    {{- $dateFormat := ( .Site.Params.settings.dateFormat | default "2006, Jan 02" ) -}}
+    <div class='last-updated'>
+      {{- partial "svg/icon" "edit" -}}
+      <span class='screen-reader-text'>{{ i18n "lastUpdated" }}: </span>
+      <time class='entry-date' datetime='{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}'>
+        {{- .Lastmod.Format $dateFormat -}}
+      </time>
+    </div>
+  {{- end -}}
+
+  {{ range $taxonomy, $pages := .Site.Taxonomies }}
+    {{- if not ( eq $taxonomy "authors" ) -}}
+      {{- if ( index $.Params $taxonomy ) -}}
+        {{- $.Scratch.Set "taxonomy" $taxonomy -}}
+        {{- partial "entry/taxonomy-list" $ -}}
+      {{- end -}}
+    {{- end -}}
+  {{ end }}
+  </div>
+</footer>
+{{ end }}

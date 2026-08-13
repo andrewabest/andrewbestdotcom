@@ -1,0 +1,36 @@
+{{/*
+  Project-level override of the theme's recent_posts widget.
+
+  This lives here rather than in themes/minimo/ so that it survives theme
+  updates. Hugo gives project layouts precedence over theme layouts.
+
+  Differs from the theme's version in two ways:
+    - lists every post instead of the first N. The theme's `length` config is
+      deliberately not applied; to cap the list again, wrap $posts in
+      `first N` at the range below.
+    - sorts explicitly newest-first rather than relying on Hugo's default
+      page ordering.
+
+  Drafts are excluded so that `hugo -D` can be used to share an unpublished
+  post without it appearing in this list.
+*/}}
+{{- $defaultConfig := .Site.Data.config.default.widgets.recent_posts -}}
+{{- $configData := ( or .Site.Data.config.widgets.recent_posts $defaultConfig ) -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+{{- $posts := ( where ( where .Site.RegularPages ".Draft" false ) "Type" "not in" $config.excludeTypes ).ByDate.Reverse -}}
+
+<section class='widget widget-recent_posts sep-after'>
+  <header>
+    <h4 class='title widget-title'>
+      {{- $config.title | default ( i18n "recentPosts" ) -}}
+    </h4>
+  </header>
+
+  <ul class='list'>
+  {{ range $posts }}
+    {{ .Render "li" }}
+  {{ end }}
+  </ul>
+</section>

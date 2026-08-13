@@ -1,16 +1,11 @@
 <head>
   {{ partial "head/meta" . }}
   <title>{{ partial "data/title" . }}</title>
-  {{ if .Params.canonical }}
-  <link rel="canonical" href="{{ .Params.canonical }}" />
-  {{ else }}
-  <link rel="canonical" href="{{ .Permalink }}" />
-  {{ end }} {{ if .RSSLink }}
-  <link
-    href="{{ .RSSLink }}"
-    rel="alternate"
-    type="application/rss+xml"
-    title="{{ .Site.Title }}"
-  />
-  {{ end }} {{ partial "head/hreflang" . }} {{ partial "head/includes" . }} {{ partial "head/extra" . }}
+  <link rel='canonical' href='{{ .Params.canonical | default .Permalink }}'>
+  {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  {{ end }}
+  {{ partial "head/hreflang" . }}
+  {{ partial "head/includes" . }}
+  {{ partial "head/extra" . }}
 </head>

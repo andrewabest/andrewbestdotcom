@@ -9,6 +9,6 @@ Andrew is an experienced leader, consultant, architect, and developer, with expe
 
 He is co-founder and Chairperson of [DDD Adelaide](https://dddadelaide.com/), the largest not-for-profit conference built and run by and for the Adelaide tech community.
 
-Andrew is currently with [Octopus](https://octopus.com/) as a Senior Principal Software Engineer, helping teams tame the complexity of their deployments!
+Andrew is currently Chief Technology Officer at [Octopus](https://octopus.com/), helping teams manage the overwhelming volume of changes they are now capable of producing.
 
 Need a [speaker](https://www.andrew-best.com/speaking/) for an event? Want to talk about [solving problems](https://www.andrew-best.com/posts/discover-decide-deliver-part-one/) that you and your team are currently tackling? Need someone to help [represent technology](https://www.andrew-best.com/posts/good-technical-strategy/) within your business? I'm more than happy to buy the coffees ☕☕

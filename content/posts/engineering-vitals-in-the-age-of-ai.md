@@ -67,7 +67,7 @@ If the hypothesis holds, these are the questions we need to be able to answer:
 
 These questions help us understand the effectiveness of our engineering organization, and help to identify which levers we might be able to pull if we spot things that are slowing us down.
 
-AI adoption has its own set of measures that sit alongside our vitals - we will talk to these in a separate blog post.
+AI adoption deserves its own set of measures that sit alongside engineering vitals - I'll talk about those in a future post.
 
 ## The measures
 
